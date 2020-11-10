@@ -2,7 +2,7 @@
 Getting_started
 ###############
 
- In order to get going with Horace we suggest that you take a little time to familiarise yourself with the program. To aid this we have created the following step-by-step guide that takes you through the process of converting SPE files into a format useable by Horace, and then shows you how to do different kinds of plot, how to manipulate your data, and finally how to simulate and fit your data. To do this we will refer to the demonstration files included in
+In order to get going with Horace we suggest that you take a little time to familiarise yourself with the program. To aid this we have created the following step-by-step guide that takes you through the process of converting SPE files into a format useable by Horace, and then shows you how to do different kinds of plot, how to manipulate your data, and finally how to simulate and fit your data. To do this we will refer to the demonstration files included in
 
 ::
 

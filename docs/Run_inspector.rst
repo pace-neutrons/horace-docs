@@ -48,6 +48,3 @@ We can now use ``run_inspector`` to plot a series of slices that come from a sin
 .. image:: images/Fe_slice_run_inspector_21.jpg
    :width: 500px
    :alt: Frame 21 in run inspector
-
-
-Fe_slice.

@@ -2,15 +2,15 @@
 List_of_functions
 #################
 
- Listed here are all the functions and commands that can be used in Horace. Each function is listed with a **brief** description of what it does, and an example syntax for its use. 
+ Listed here are all the functions and commands that can be used in Horace. Each function is listed with a **brief** description of what it does, and an example syntax for its use.
 
-\ `Generating SQW files <Generating_SQW_files>`__
+`Generating SQW files <Generating_SQW_files>`__
 
 - `accumulate_sqw <Generating_SQW_files#accumulate_sqw>`__
 - `gen_sqw <Generating_SQW_files#gen_sqw>`__
 
 
-\ `Correcting for sample misalignment <Correcting_for_sample_misalignment>`__
+`Correcting for sample misalignment <Correcting_for_sample_misalignment>`__
 
 - `bragg_positions <Correcting_for_sample_misalignment#bragg_positions>`__
 - `bragg_positions_view <Correcting_for_sample_misalignment#bragg_positions_view>`__
@@ -22,12 +22,12 @@ List_of_functions
 - `uv_correct <Correcting_for_sample_misalignment#uv_correct>`__
 
 
-\ `Data diagnostics <Data_diagnostics>`__
+`Data diagnostics <Data_diagnostics>`__
 
 - `run_inspector <run_inspector>`__
 
 
-\ `Plotting <Plotting>`__
+`Plotting <Plotting>`__
 
 - `1-dimensional plot commands <Plotting#pd>`__
 - `2-dimensional plot commands <Plotting#da>`__
@@ -36,7 +36,7 @@ List_of_functions
 - `Spaghetti plot <Plotting#spaghetti_plot>`__
 
 
-\ `Manipulating and extracting data from SQW files and objects <Manipulating_and_extracting_data_from_SQW_files_and_objects>`__
+`Manipulating and extracting data from SQW files and objects <Manipulating_and_extracting_data_from_SQW_files_and_objects>`__
 
 - `cut_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects#cut_sqw>`__
 - `head_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects#head>`__
@@ -46,14 +46,14 @@ List_of_functions
 - `extract coordinates <Manipulating_and_extracting_data_from_SQW_files_and_objects#hkle>`__
 
 
-\ `Symmetrising etc <Symmetrising_etc>`__
+`Symmetrising etc <Symmetrising_etc>`__
 
 - `Symmetrise <Symmetrising_etc#symmetrise_sqw>`__
 - `Combine <Symmetrising_etc#combine_sqw>`__
 - `Rebin <Symmetrising_etc#rebin_sqw>`__
 
 
-\ `Simulation <Simulation>`__
+`Simulation <Simulation>`__
 
 - `func_eval <Simulation>`__
 - `sqw_eval <Simulation>`__
@@ -62,7 +62,7 @@ List_of_functions
 - `disp2sqw_plot <Simulation>`__
 
 
-\ `Fitting data <Multifit>`__
+`Fitting data <Multifit>`__
 
 - `multifit <Multifit#multifit>`__
 - `multifit_func <Multifit#multifit_func>`__
@@ -71,7 +71,7 @@ List_of_functions
 
 
 
-\ `Binary operations <Binary_operations>`__
+`Binary operations <Binary_operations>`__
 
 - `minus <Binary_operations#List_of_operations_and_their_equivalent_code>`__
 - `plus <Binary_operations#List_of_operations_and_their_equivalent_code>`__
@@ -81,7 +81,7 @@ List_of_functions
 - `mpower <Binary_operations#List_of_operations_and_their_equivalent_code>`__
 
 
-\ `Unary operations <Unary_operations>`__
+`Unary operations <Unary_operations>`__
 
 - `uplus <Unary_operations#uplus>`__
 - `uminus <Unary_operations#uminus>`__
@@ -89,7 +89,7 @@ List_of_functions
 - `Other mathematical functions <Unary_operations#Other_mathematical_functions>`__
 
 
-\ `Reshaping etc <Reshaping_etc>`__
+`Reshaping etc <Reshaping_etc>`__
 
 - `replicate <Reshaping_etc#replicate>`__
 - `compact <Reshaping_etc#compact>`__
@@ -102,7 +102,7 @@ List_of_functions
 - `section <Reshaping_etc#section>`__
 
 
-\ `Read or write to disk <Read_or_write_to_disk>`__
+`Read or write to disk <Read_or_write_to_disk>`__
 
 - `read <Read_or_write_to_disk#read>`__
 - `save <Read_or_write_to_disk#save>`__
@@ -111,7 +111,7 @@ List_of_functions
 - `display <Read_or_write_to_disk#display>`__
 
 
-\ `Changing object type <Changing_object_type>`__
+`Changing object type <Changing_object_type>`__
 
 - `d0d <Changing_object_type#d0d>`__
 - `d1d <Changing_object_type#d1d>`__
@@ -121,4 +121,4 @@ List_of_functions
 - `sqw <Changing_object_type#sqw>`__
 - `IX_dataset_1d <Changing_object_type#IX_dataset_1d>`__
 - `IX_dataset_2d <Changing_object_type#IX_dataset_2d>`__
-- `IX_dataset_3d <Changing_object_type#IX_dataset_3d>`__ 
+- `IX_dataset_3d <Changing_object_type#IX_dataset_3d>`__

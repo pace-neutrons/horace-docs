@@ -12,6 +12,7 @@ Commands for cuts and slices
 Symmetrising
 ************
 
+
 Symmetrising data in memory
 ---------------------------
 

@@ -2,11 +2,10 @@
 Multifit
 ########
 
- Horace (and the parent utilities library, Herbert) comes with a rich and powerful fitting syntax that is common to the methods used to fit functions or models of S(Q,w) to one or more datasets. The documentation here is only meant to give an introduction and overview. For the full help, please use the Matlab documentation for the various fitting functions that can be obtained by using the ``doc`` command, for example ``doc d1d/multifit`` (for fitting function like Gaussians to d1d objects) or ``doc sqw/multifit_sqw`` (fitting models for S(Q,w) to sqw objects). It is strongly recommended that you use ``doc``, not ``help`` to explore how to use these methods, so that you can navigate between the numerous pages of documentation in the Matlab help window.
+Horace (and the parent utilities library, Herbert) comes with a rich and powerful fitting syntax that is common to the methods used to fit functions or models of S(Q,w) to one or more datasets. The documentation here is only meant to give an introduction and overview. For the full help, please use the Matlab documentation for the various fitting functions that can be obtained by using the ``doc`` command, for example ``doc d1d/multifit`` (for fitting function like Gaussians to d1d objects) or ``doc sqw/multifit_sqw`` (fitting models for S(Q,w) to sqw objects). It is strongly recommended that you use ``doc``, not ``help`` to explore how to use these methods, so that you can navigate between the numerous pages of documentation in the Matlab help window.
 
 Overview
 ========
-
 
 Horace provides a set of methods for fitting sqw and d1d,d2d,...d4d objects. which all share the same fitting syntax and capabilities. The various forms of multifit enable you to:
 - fit a function to single dataset
