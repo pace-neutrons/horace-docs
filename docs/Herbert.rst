@@ -73,6 +73,7 @@ Installation by editing and registering package_on file
 write there:
 
 ::
+
    her_default_path='c:/mprogs/Herbert';
 
 2) Rename **herbert_on.m.template** into **herbert_on.m** and move this file into the folder where matlab can always found it.
@@ -80,6 +81,7 @@ write there:
    a) To do that we recommend creating folder:
 
       ::
+
 	 mkdir $matlab_folder$/toolbox/ISIS
 
       where $matlab_folder$ is the folder where matlab is installed (type (bash) **ls -l \`which matlab\`** under Unix or 'right click on matlab icon' and select *properties* under windows and select the path above /bin folder in both cases)
@@ -87,12 +89,14 @@ write there:
    b) Start matlab and execute:
 
       ::
+
 	 >>addpath($matlab_folder$/toolbox/ISIS) % replace $matlab_folder$ by real matlab path identified at step 2a)
 	 >>savepath()
 
    c) move herbert_on.m file there and update toolbox cache typing:
 
       ::
+
 	 >>rehash toolbox
 
       or selecting this option from the GUI (File->preferences->general->update toolbox cache in Matlab 2011b but can be in different place for different Matlab version)
