@@ -1,5 +1,5 @@
 #############################################
-Script_for_making_publication_quality_figures
+Script for making publication quality figures
 #############################################
 
 ::

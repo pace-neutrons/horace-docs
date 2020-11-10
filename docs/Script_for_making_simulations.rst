@@ -1,5 +1,5 @@
 #############################
-Script_for_making_simulations
+Script for making simulations
 #############################
 
 Simulations

@@ -1,5 +1,5 @@
 ########################
-Changing_Horace_settings
+Changing Horace settings
 ########################
 
 It is possible to alter the default settings of Horace, depending on your personal preferences and/or computer specifications.

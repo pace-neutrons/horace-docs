@@ -1,5 +1,5 @@
 #####
-s_new
+s new
 #####
 
 On this page we give details of significant changes between various releases of Horace. Minor debugs will not be listed here.

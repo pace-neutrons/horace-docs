@@ -1,5 +1,5 @@
 #########################################
-Script_for_correcting_sample_misalignment
+Script for correcting sample misalignment
 #########################################
 
 ::

@@ -19,24 +19,28 @@ Installation using Matlab startup file
 Unzip all of the Herbert folders into a single directory. The directory structure below this will be taken care of by your zip program. On a Windows machines a good place to put this would be somewhere like
 
 ::
-   C:\\mprogs\\
+
+   C:\mprogs\
 
 
 On Unix convenient place would be an
 
 ::
-   ~\\ISIS folder.
+
+   ~/ISIS folder.
 
 
 Now you need to edit your startup.m file so that Horace is added to the Matlab path whenever you restart. Find your startup.m file, which is usually located somewhere like
 
 ::
-   C:\\Usersx\\local\\startup.m
+
+   C:\Usersx\local\startup.m
 
 
 This is the Matlab default location. Alternatively you can start a new Matlab session and then type
 
 ::
+
    edit startup
 
 
@@ -45,6 +49,7 @@ and the correct startup file should be found.
 Assuming that you have unpacked herbert into the folder: c:\\mprogs\\Herbert, and the herbert_init.m can be found in this folder, add the to your startup file the following rows:
 
 ::
+
    try
    libisis_off();
    catch
@@ -54,7 +59,9 @@ Assuming that you have unpacked herbert into the folder: c:\\mprogs\\Herbert, an
    catch
    end
 
+
 ::
+
    addpath('c:\\mprogs\\Herbert');
    herbert_init;
 

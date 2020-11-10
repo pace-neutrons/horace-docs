@@ -1,5 +1,5 @@
 #################
-Binary_operations
+Binary operations
 #################
 
 Binary operations between two objects can be handled in a variety of ways in Horace. You can either use the Matlab symbols +, - , \*, / and \\\, or you can use the explicit function names ``plus, minus, mtimes, mrdivide`` and ``mldivide``.

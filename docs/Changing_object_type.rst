@@ -1,5 +1,5 @@
 ####################
-Changing_object_type
+Changing object type
 ####################
 
 dnd

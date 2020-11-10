@@ -1,5 +1,5 @@
 ####################
-The_Horace_Rationale
+The Horace Rationale
 ####################
 
 Horace is a suite of programs for the visualisation and analysis of large datasets from time-of-flight neutron inelastic scattering spectrometers. The feature of Horace that is new compared to existing software, such as MSlice, is that it allows you to combine data from multiple runs (each with different incident energy and/or sample orientation) and thus build up a 4-dimensional dataset that, in principle, covers Q and energy in all directions.

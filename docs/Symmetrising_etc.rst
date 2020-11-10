@@ -1,5 +1,5 @@
 ################
-Symmetrising_etc
+Symmetrising etc
 ################
 
  It is possible to do combinational operations on sqw objects, e.g. to combine specified symmetrically equivalent wavevectors such as (-1,0,0) and (1,0,0), for example. The advantage of doing this is that for a given cut or slice you are able to include data from many more detector pixels, thus improving the statistical quality of your data.

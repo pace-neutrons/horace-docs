@@ -1,5 +1,5 @@
 #################
-List_of_functions
+List of functions
 #################
 
  Listed here are all the functions and commands that can be used in Horace. Each function is listed with a **brief** description of what it does, and an example syntax for its use.

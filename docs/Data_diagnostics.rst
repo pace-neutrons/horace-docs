@@ -1,5 +1,5 @@
 ################
-Data_diagnostics
+Data diagnostics
 ################
 
 Horace contains various tools for diagnosing issues with the data. The foremost of these is the `run_inspector <run_inspector>`__ tool.

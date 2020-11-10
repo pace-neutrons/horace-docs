@@ -1,5 +1,5 @@
 ##################
-Become_a_developer
+Become a developer
 ##################
 
- If you wish to develop new code for Horace please get in touch with us: `Horace Help <mailto:HoraceHelp@stfc.ac.uk>`__ 
+If you wish to develop new code for Horace please get in touch with us: `Horace Help <mailto:HoraceHelp@stfc.ac.uk>`__

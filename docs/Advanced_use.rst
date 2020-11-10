@@ -1,5 +1,5 @@
 ############
-Advanced_use
+Advanced use
 ############
 
 The following details more comprehensively the functions in the Horace suite. In the `Getting started <Getting_started>`__ section a brief tutorial was provided on the use of the essential Horace functions. In addition there is also a `list of functions <list_of_functions>`__, which details the syntax for every function.

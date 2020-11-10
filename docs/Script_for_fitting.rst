@@ -1,5 +1,5 @@
 ##################
-Script_for_fitting
+Script for fitting
 ##################
 
 ::

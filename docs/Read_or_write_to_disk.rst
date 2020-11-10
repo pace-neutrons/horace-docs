@@ -1,5 +1,5 @@
 #####################
-Read_or_write_to_disk
+Read or write to disk
 #####################
 
 read_horace, read_sqw, read_dnd

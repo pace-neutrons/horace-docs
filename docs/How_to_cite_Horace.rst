@@ -1,5 +1,5 @@
 ##################
-How_to_cite_Horace
+How to cite Horace
 ##################
 
 We are pleased to report that our paper detailing the theory behind and application of Horace has been published in Nuclear Instruments and Methods in Physics Research. It freely available online `here <http://www.sciencedirect.com/science/article/pii/S016890021630777X>`__, from where you can also download a pdf copy under the `Creative Commons Attribution License <https://creativecommons.org/licenses/by/4.0/>`__. Please cite this paper if you have used Horace in your research.

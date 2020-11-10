@@ -1,5 +1,5 @@
 ###########################################################
-Manipulating_and_extracting_data_from_SQW_files_and_objects
+Manipulating and extracting data from SQW files and objects
 ###########################################################
 
 cut_sqw

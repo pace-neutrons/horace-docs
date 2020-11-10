@@ -1,5 +1,5 @@
 ####################
-Generating_SQW_files
+Generating SQW files
 ####################
 
 This page tells you how to generate an SQW file. There are two different situations when you will want to do this:

@@ -1,5 +1,5 @@
 ####################
-Papers_citing_Horace
+Papers citing Horace
 ####################
 
 Here we list published papers containing work which required the use of Horace.

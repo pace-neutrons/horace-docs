@@ -1,5 +1,5 @@
 ################
-Unary_operations
+Unary operations
 ################
 
  A unary operation is one that is performed on a single object, with no additional inputs. A single object is returned.

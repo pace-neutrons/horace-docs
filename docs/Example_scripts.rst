@@ -1,5 +1,5 @@
 ###############
-Example_scripts
+Example scripts
 ###############
 
 On this page we provide a series of short scripts that illustrate different aspects of Horace. Accompanying plots and screenshots are also included. The intention is that you can copy these scripts and edit them according to your own needs, in order to reduce the amount of typing you need to do, and to provide examples of best practice. You may also find some extra Horace commands that you didn't know about!

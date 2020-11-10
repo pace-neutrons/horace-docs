@@ -1,5 +1,5 @@
 ##################
-Input_file_formats
+Input file formats
 ##################
 
 To generate the SQW file from which Horace reads S(**Q**,w), neutron scattering data for each individual run and needs to be provided in one of two formats: the legacy ASCII format SPE file, together with an ASCII detector parameter file (the PAR file), or their replacements the HDF5 (Hierarchical Data Format) NXSPE file. Two functions are available as part of Horace to create SQW files from these input files, namely ``gen_sqw`` (creates a new SQW file) and ``accumulate_sqw`` (accumulates data to an existing SQW file). The functions to generate SQW files are described in detail `here <Generating_SQW_files>`__.

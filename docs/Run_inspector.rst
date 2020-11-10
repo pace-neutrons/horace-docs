@@ -1,5 +1,5 @@
 #############
-Run_inspector
+Run inspector
 #############
 
 

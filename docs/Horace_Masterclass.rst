@@ -1,5 +1,5 @@
 ##################
-Horace_Masterclass
+Horace Masterclass
 ##################
 
  The below is a Matlab script file that was written for a masterclass on the use of Horace, given by R. A. Ewings on 29th April 2010. All of the relevant data files can be found on the Melehan machine, and a copy of this scrip file is held in ``/sandata/home/merlin01/users/Demostration/``.

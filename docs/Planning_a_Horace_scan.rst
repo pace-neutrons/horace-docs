@@ -1,5 +1,5 @@
 ######################
-Planning_a_Horace_scan
+Planning a Horace scan
 ######################
 
 

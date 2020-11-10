@@ -1,5 +1,5 @@
 #################################
-Script_for_planning_an_experiment
+Script for planning an experiment
 #################################
 
 ::

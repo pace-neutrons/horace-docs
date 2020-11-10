@@ -1,5 +1,5 @@
 ###############################
-Script_for_generating_sqw_files
+Script for generating sqw files
 ###############################
 
 ::

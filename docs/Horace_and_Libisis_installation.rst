@@ -1,5 +1,5 @@
 ###############################
-Horace_and_Libisis_installation
+Horace and Libisis installation
 ###############################
 
 

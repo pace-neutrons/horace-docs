@@ -1,5 +1,5 @@
 ###################################
-Script_for_making_cuts_and_plotting
+Script for making cuts and plotting
 ###################################
 
 ::

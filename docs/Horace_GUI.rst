@@ -1,5 +1,5 @@
 ##########
-Horace_GUI
+Horace GUI
 ##########
 
 The Horace Graphical User Interface (GUI) is available as an alternative to using the command line. It is included in the latest distributions of Horace and we welcome comments from users regarding how it could be improved (please email `Horace Help <mailto:HoraceHelp@rl.ac.uk>`__ with feedback).

@@ -1,8 +1,8 @@
 ##################################
-Correcting_for_sample_misalignment
+Correcting for sample misalignment
 ##################################
 
- When mounting your sample on a spectrometer, it can often be the case that it is slightly misaligned compared the to the 'perfect' alignment assumed when generating the SQW file (the u and v vectors provided in ``gen_sqw`` and ``accumulate_sqw``). It is straightforward to correct such misalignment once enough data have been accumulated by comparing the positions of Bragg peaks compared to what they should be. The alignment correction is thus a process to be done in several steps - first the misalignment must be determined and checked, and then the correction must be applied to the data.
+When mounting your sample on a spectrometer, it can often be the case that it is slightly misaligned compared the to the 'perfect' alignment assumed when generating the SQW file (the u and v vectors provided in ``gen_sqw`` and ``accumulate_sqw``). It is straightforward to correct such misalignment once enough data have been accumulated by comparing the positions of Bragg peaks compared to what they should be. The alignment correction is thus a process to be done in several steps - first the misalignment must be determined and checked, and then the correction must be applied to the data.
 
 
 Step 1 - determine the true positions of Bragg peaks

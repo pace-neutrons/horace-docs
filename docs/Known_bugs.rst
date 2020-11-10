@@ -1,5 +1,5 @@
 ##########
-Known_bugs
+Known bugs
 ##########
 
 We will endeavour to ensure that Horace reaches you in a fully usable state. However, as more people start to use Horace it is inevitable that bugs will be discovered. If you find a bug please email `Horace Help <mailto:horacehelp@stfc.ac.uk>`__ so that we can ensure it is fixed in subsequent versions of Horace.
