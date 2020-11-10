@@ -38,7 +38,7 @@ LITERAL_BLOCK_RE = re.compile(r"\s*::")
 PAPER_LIST_RE = re.compile(r"\\\*\*\\")
 TABLE_START_RE = re.compile(r"{\\?\|")
 TABLE_END_RE = re.compile(r"\|}")
-IMAGE_RE = re.compile(r"\\ `(?P<size>[0-9]+px)\|(?P<label>[^<]+)<image:(?P<path>[^>]+)>`__")
+IMAGE_RE = re.compile(r"\\ `(?P<size>[0-9]+px)\s*(\s|\|)\s*(?P<label>[^<]+)<image:(?P<path>[^>]+)>`__")
 NL_RE = re.compile(r"\n")
 ANY_MATCH_RE = re.compile("|".join(map(lambda r: r.pattern, (
     NEWPAGE_RE,
