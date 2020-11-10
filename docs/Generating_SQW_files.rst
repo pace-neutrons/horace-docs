@@ -9,8 +9,6 @@ The two functions have almost identical syntax, as is explained in the sections 
 
 To generate the SQW file neutron data for each individual run needs to be provided in one of two formats: the legacy ASCII format SPE file, together with an ASCII detector parameter file (the PAR file), or their replacements the HDF (hierarchical Data Format) NXSPE file. More details about these files and how to create them can be found `here <Input_file_formats>`__
 
-
-
 accumulate_sqw
 ==============
 
@@ -76,7 +74,13 @@ The input parameters are defined as follows:
 
 \ ``omega``, ``dpsi``, ``gl``, and ``gs`` specify the offsets (in degrees of various angles). ``gl`` and ``gs`` describe the settings of the large and small goniometers. ``omega`` is the offset of the axis of the small goniometer with respect to the notional ``u``. Finally ``dpsi`` allows you to specify an offset in ``psi``, should you wish. These angle definitions are shown below:
 
-\ `300px|Virtual goniometer angle definitions <image:Gonio_angle_definitions.jpg>`__
+
+.. image:: images/Gonio_angle_definitions.jpg
+   :width: 300px
+   :alt: Virtual goniometer angle definitions 
+
+
+
 
 The optional input arguments are as follows:
 
@@ -91,7 +95,6 @@ The optional input arguments are as follows:
 \ ``'replicate'``: Normally the function forbids an SPE or NXSPE file from appearing more than once. This is to trap common typing errors. However, sometimes you might want to create an sqw file using, for example, just one SPE file as the source of data for all crystal orientations in order to construct a background from an empty piece of sample environment. In this case, use the keyword 'replicate' to override the uniqueness check.
 
 \ ``'clean'``: Create the SQW file from fresh. This option deletes existing SQW file (if any) and forces fresh generation of SQW file from the list of data files provided. It is possible to get confused about what data has been included in an SQW file if it is built up slowly over an experiment. Use this option to start afresh.
-
 
 gen_sqw
 =======

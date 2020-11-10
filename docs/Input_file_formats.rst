@@ -8,8 +8,6 @@ To generate the SQW file from which Horace reads S(**Q**,w), neutron scattering 
 
 Generally, the input data files (SPE or NXSPE format) will be created by the data reduction code for the instrument which you are using if Horace has been made available for that instrument by the scientist(s) responsible. However, if you want to use Horace to analyse data from other instruments you need to know how to create the input files from whatever format your data is saved in.
 
-
-
 NXSPE file
 ==========
 
@@ -20,7 +18,6 @@ The recommended input data file for Horace is the NXSPE file, which holds both t
 Data files in the NXSPE format are produced by the Mantid data analysis software (http://www.mantidproject.org/). They are directly produced by the data reduction algorithms within Mantid for the direct geometry spectrometers at both the ISIS spallation neutron source at the Rutherford Appleton Laboratory in the UK and the SNS spallation neutron source at Oak Ridge National Laboratory in the USA. Mantid is an open source data manipulation and analysis framework for neutron and muon data analysis. If Mantid is used to perform the data corrections for a neutron spectrometer, then the Mantid algorithm ``SaveNXSPE`` can be used to output NXSPE files. Full details of how to use Mantid and the input/output for each algorithm are available at the [http://www.mantidproject.org/\ \| Mantid web site].
 
 More suitable for a 'quick start', is if you can read corrected scattering data, associated estimated errors, and detector parameters into Matlab arrays. You can then use the Horace utility function ``gen_nxspe`` to create NXSPE files.
-
 
 gen_nxspe
 *********
@@ -70,8 +67,6 @@ SPE file and PAR file
 
 
 These files may be encountered if you are using Horace to analyse older data. The ASCII format SPE file stores S(w) and associated error bars as a function of energy transfer, h-barw, for each detector in turn. In addition to the set of SPE files, Horace requires an accompanying ASCII file which contains information about the location of the detectors in the spectrometer's reference frame, the PAR file. Although these ASCII format files have largely been superseded in favour of the NXSPE format described above, such files are ubiquitous as the format in which historic data is saved, and are recognised by several other neutron visualisation and analysis programs. Some programs can also write their own output as SPE files, and consequently the SPE file is sometimes used as a transportable format data file for time-of-flight neutron spectrometers. The format of these two files is described here. However, it is not recommended to create new SPE files as it is now an obsolete file format.
-
-
 
 SPE file format
 ***************

@@ -2,7 +2,11 @@
 Read_or_write_to_disk
 #####################
 
- ==read_horace, read_sqw, read_dnd==
+
+read_horace, read_sqw, read_dnd
+===============================
+
+
 
 There are three functions that can be used to read sqw or d1d,d2d,...d4d data from a binary file that was written using ``save``.
 
@@ -51,7 +55,6 @@ In the example shown here ``w_read`` is an sqw object, since the data in ``myfil
 
 In the example shown here ``w_read`` is an d1d object, since the data in ``myfile.d1d`` originated from a cut created using cut_sqw with option '-nopix'.
 
-
 save
 ====
 
@@ -73,8 +76,6 @@ Function that applies to all dimensionalities and types of datasets.
 
 
 This function writes the n-dimensional dataset ``w_in`` (sqw type or d1d etc type) to a file specified by the string ``filename``.
-
-
 
 save_xye
 ========

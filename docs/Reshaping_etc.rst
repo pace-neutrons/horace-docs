@@ -53,7 +53,6 @@ or
 
 Note that ``wref`` can be either a dnd or an sqw type object. However ``w_nd`` MUST be dnd and not sqw, as we have not yet implemented replication for sqw datasets. 
 
-
 compact
 =======
 
@@ -70,8 +69,6 @@ A function to squeeze the range of a dataset to eliminate empty bins. For exampl
    
    wout = compact(win);
    
-
-
 
 
 
@@ -113,7 +110,6 @@ makes the new 1st axis the old 3rd, and the new 3rd axis the old 1st.
 The permute function exists for dimensionalities 1 to 4 (obviously); however the 1-dimensional version simply returns the original object since there is only one axis and permutation of it does not do anything.
 
 Note that the only thing that this function changes is the order of the axes for display. All other information, including the projection axes, are unchanged.
-
 
 cut
 ===
@@ -159,7 +155,6 @@ where ``ax_1`` etc. take the form:
 
 - ``[]`` for leaving the limits and step size of an axis unchanged.
 
-
 smooth
 ======
 
@@ -197,8 +192,6 @@ Alternatively
 
 The vector ``[width_vector]`` contains n element for a n-dimensional object and gives the width of the convolution along each axis in terms of the number of bins. Alternatively you can supply a scalar, in which case the same width will be used for all axes. You can also choose with what function the data are convoluted. There are two choices for the argument ``function``, either 'hat' or 'gaussian'.
 
-
-
 mask
 ====
 
@@ -217,7 +210,6 @@ mask
 
 
 Apply a mask to points in an n-dimensional dataset ``win``. The masked out points have their intensity set to NaN, errorbar set to zero and npix field set to zero. The points to mask are defined by ``mask_array``, which should be an array the same size as the intensity array of ``win``, consisting of 1s and 0s where data are to be retained or masked respectively.
-
 
 mask_points
 ===========
@@ -259,7 +251,6 @@ The outputs are:
 
 \ ``mess`` is a message string giving information about why the function failed. If ok==true then this is an empty string.
 
-
 mask_runs
 =========
 
@@ -288,8 +279,6 @@ The inputs are:
 The output is:
 
 - ``wout``, the output sqw object with mask applied
-
-
 
 section
 =======

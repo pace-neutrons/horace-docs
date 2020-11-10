@@ -6,10 +6,13 @@ Binary_operations
 
 There are several options for the input parameters to binary operations
 
-=sqw objects=
+
+sqw objects
+-----------
+
+
 
 Let us take for our example the addition operator '+', and our initial single sqw object is called ``w1`` and has the 'pix' array retained (note this is an important point - you can have an sqw object without the pix array by converting a dnd object to sqw. In that case the result is referred to as an sqw object of dnd type. In our example ``w1`` has a pix array, so is referred to as an sqw of sqw type).
-
 
 Single sqw object
 =================
@@ -79,10 +82,12 @@ There is one additional possibility
 
 - ``numeric_array`` is an array of scalars whose size matches the size of the sqw array. The output will continue to be an sqw of sqw type, with a pix array.
 
-=dnd objects=
+dnd objects
+-----------
+
+
 
 Note that here we will use the phrase dnd object also to mean sqw object of dnd type, since the two are very closely related.
-
 
 Single dnd object
 =================
@@ -135,7 +140,11 @@ As with arrays of sqw objects, there is one further choice compared to a single 
 
 As for sqw objects, the numeric array has to be the same size as the array of dnd objects.
 
-=List of operations and their equivalent code=
+
+List of operations and their equivalent code
+--------------------------------------------
+
+
 The arithmetic operations above correspond to equivalent Matlab functions. You should never need to use these, but for reference the corresponding functions are:
 
 

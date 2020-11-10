@@ -2,7 +2,11 @@
 Download_and_setup
 ##################
 
- == System Requirements ==
+
+System Requirements
+===================
+
+
 
 - Windows 32-bit, Windows 64-bit, or Linux 64-bit operating system
 - Plenty of free disk space in order to cope with the combined data files >30GB
@@ -10,7 +14,6 @@ Download_and_setup
 - Preferably a recent version of Matlab. Horace is guaranteed to be supported for Matlab versions for five years earlier than the most recent version. Horace may work with earlier versions, but this is dependent on whether or not newer features of Matlab have been exploited or now-obsolete Matlab functions has been removed. 
 
 We have tested Horace on Windows 32-bit and 64-bit operating systems, and Linux 64-bit operating systems. Horace itself is supplied with compiled dll (mex files) for 32 and 64 bit windows. Horace will work with other operating systems (e.g. Mac), albeit slower than if Horace C++ routines have not been compiled. See further down this page for details of how to compile your own mex files.
-
 
 Download
 ========
@@ -36,7 +39,6 @@ New Smaller Download
 
 
 In the download area (see below) you can now get a zipped distribution of Horace **without demo and test files**. This is significantly smaller - about 3MB rather than 100MB for the full installation.
-
 
 Full Download
 *************
@@ -184,7 +186,6 @@ Horace will be available after typing
 
 
 You can copy contents of **horace_on.m** function into your **startup.m** file and add **horace_on()**; command to the end of the executive part of **startup.m** file instead of the code, described in the previous chapter. **startup.m** file is not executed by Matlab workers so to use high performance capabilities one still needs to modify Matlab search path.
-
 
 Building mex files
 ==================

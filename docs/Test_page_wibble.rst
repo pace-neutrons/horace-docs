@@ -4,7 +4,13 @@ Test_page_wibble
 
  Original image
 
-\ `500px|bin ops <image:Binary_ops.png>`__
+
+.. image:: images/Binary_ops.png
+   :width: 500px
+   :alt: bin ops 
+
+
+
 
 
 Changed code for original image
@@ -13,7 +19,13 @@ Changed code for original image
 
 Convert format of an image to jpg, from png
 
-\ `500px|bin ops <image:Binary_ops.jpg>`__
+
+.. image:: images/Binary_ops.jpg
+   :width: 500px
+   :alt: bin ops 
+
+
+
 
 As above, but without resizing
 
@@ -21,7 +33,13 @@ As above, but without resizing
 
 New image
 
-\ `500px|Brunel <image:14brunel1.jpg>`__
+
+.. image:: images/14brunel1.jpg
+   :width: 500px
+   :alt: Brunel 
+
+
+
 
 
 New image, new code

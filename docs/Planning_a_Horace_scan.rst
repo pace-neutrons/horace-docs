@@ -2,7 +2,11 @@
 Planning_a_Horace_scan
 ######################
 
- =horace_planner: a simple scan planner=
+
+horace_planner: a simple scan planner
+-------------------------------------
+
+
 
 Horace has a useful little tool which allows you to work out the coverage of reciprocal space that will be achieved for a given instrument / incident energy / sample angle range.
 
@@ -36,7 +40,11 @@ The graphical user interface shown below should open up
 
 - The three views shown in the image above correspond to looking at the Q-coverage volume from three different perspectives. On the top left we see the view from above (i.e. down an axis perpendicular to **u** and **v**), on the top right we see the view from the right-hand side (i.e. along **u** from the positive side), and on the bottom left we see a view from the bottom (i.e. along **v** from the negative side)
 
-=More detailed planning of scans=
+
+More detailed planning of scans
+-------------------------------
+
+
 
 The scan planner shown above is quick and simple to use. But sometimes you want to inspect very carefully exactly what reciprocal space coverage you will get for a given scan. To do this you can generate a fake dataset, where the 'signal' is represented as the angle of of the contributing scan at each point. Note that this process is rather slow, so is better for checking your decisions about what scan range and incident energy from the simple scan planner detailed above.
 

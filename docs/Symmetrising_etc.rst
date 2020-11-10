@@ -9,8 +9,6 @@ Commands for cuts and slices
 ============================
 
 
-
-
 Symmetrising
 ************
 
@@ -127,7 +125,6 @@ This instructs Horace to use 16 MPI workers instead of the default of 8, enabled
 
 
 
-
 Combining
 *********
 
@@ -146,7 +143,6 @@ Combining
 
 
 Combine two sqw objects (w1 and w2) of the SAME dimensionality into a single sqw object in order to improve statistics. The output object will have a combined value for the integration range e.g. combining two 2d slices taken at L=1 and L=2 will result in an output for which the stated value of L is L=1.5. Two objects which use different projection axes can be combined. The output object will have the projection axes of w1.
-
 
 Rebinning
 *********
@@ -247,7 +243,6 @@ Below we show a script that uses the ``symmetrise_sqw`` and ``combine_sqw`` comm
 
 
 
-
 Correcting for magnetic form factor
 ***********************************
 
@@ -272,7 +267,6 @@ The class **MagneticIons** contains the tables of fitting parameters, used to ca
 Where 'Fe0' is the name of the ion for which the magnetic form factor is calculated. **This method should be applied only once**. 
 
 The auxiliary **MagneticIons**'s method *IonNames* returns the cell array of ion names, which are currently tabulated in Horace and for which scattering can be corrected using the expression above. Additional **MagneticIons** methods *calc_mag_ff* and *apply_mag_ff* allow one to calculate magnetic form factor on or apply magnetic form factor to the dataset provided.
-
 
 Commands for entire datasets
 ============================
@@ -388,7 +382,6 @@ By default ``combine_equivalent_zones`` generates a set of reflections, transfor
 \ **symmetry_type** currently can be *sigma* (for reflections) or *shift* (for moving different zones). 
 
 The sample script above also generates duplicated pixels, as the [2,0,0] zones are moved into [0,0,0] positions and the same zones at the edges of the cuts (e.g [1,1,0]+-1) will be accounted for twice. The direction of the projection should be changed to avoid this.
-
 
 Limitations
 ***********

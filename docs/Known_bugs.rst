@@ -9,8 +9,6 @@ Current issues
 ==============
 
 
-
-
 Symmetrisation problem with dnd data
 ************************************
 

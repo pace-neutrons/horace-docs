@@ -13,9 +13,6 @@ Another joint `Horace <Horace_Workshop>`__ `SpinW <https://www.psi.ch/spinw/>`__
 
 We expect to have another workshop late in 2020 - check here for news.
 
-
-
-
 **New Horace file format**
 **************************
 

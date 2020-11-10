@@ -53,7 +53,6 @@ In technical terms the function ``det`` is not a "method" of (i.e. function that
 
 Matlab allows you to create your own objects, and methods to go with them, and this is what has been done with Horace. The objects are named d0d, d1d, d2d, d3d, d4d, and sqw, which correspond to 0D datasets, 1D datasets,..., 4D datasets, and general datasets of any dimensionality with full detector pixel information retained. The methods that apply to these objects are contained within the directories ``C:\\mprogs\\Horace\\@d0d`` etc. Methods that apply to different objects can have the same name, and in the interests of keeping things relatively intuitive there are several examples of this within Horace, e.g. if you type ``plot(w)`` then the object ``w`` will be correctly plotted (unless it is a d0d or d4d object, of course!) because there is a ``plot`` method in all of the d1d, d2d, d3d, and sqw directories.
 
-
 Help
 ====
 
@@ -341,7 +340,6 @@ At a later time you may wish to read this object back into your Matlab workspace
 
 Note that the commands ``save`` and ``read_dnd`` are methods specific to each kind of object (i.e. there is a ``save`` function in the @d0d,...,@d4d, @sqw directories). Also note that the file extension .dat does not have to be used. In fact it is probably a good idea to use the extensions .d0d,...,.d4d, or .sqw so that you can tell easily what sort of object has been saved by just looking at the filename.
 
-
 Binary operations
 =================
 
@@ -357,8 +355,6 @@ Horace allows you to perform simple binary arithmetic operations on dnd and sqw 
 
 
 A complete list of binary arithmetic operations can be found `here <Binary_operations>`__
-
-
 
 Unary operations
 ================
@@ -549,8 +545,6 @@ Finally, one can create higher dimensional datasets by using the command ``repli
 
 This function takes an input object ``win`` and maps it on to a higher dimensional dataset ``wref`` by repeating the data over the extra dimension(s). At present ``wout`` and ``win`` must be dnd objects, and NOT sqw objects, however ``wref`` can be either a dnd or an sqw.
 
-
-
 Plotting
 ========
 
@@ -589,7 +583,6 @@ To alter the limits along the x, y, or z axes you use the commands ``lx, ly`` an
 to change the limits along x to be 0 and 2, and so on.
 To change the axes to log-scale, you use the commands ``logx, logy`` and ``logz``, and to change to a linear scale you use ``linx``\ ...etc. A full list of formatting options can be found `here <http://www.libisis.org/User_Manual#Plot_Commands>`__.
 
-
 Fitting
 =======
 
@@ -601,7 +594,6 @@ For an introduction and overview of how to use the following fitting functions, 
 
 
  
-
 
 Simulating
 ==========
@@ -626,7 +618,6 @@ The essential difference comes for the function used to simulate the data. For `
 The arrays input to the ``sqw_eval`` function are different, because there must always be 4 arrays before the input parameters are given. The 4 arrays correspond to the values of the Miller indices h, k, and l; plus energy. The 4 arrays are always supplied, even if the dimensionality of the object to be simulated is lower than 4 -- in this case the values of all of the elements for one or more of the arrays will all be the same. This means that the same function can be used to simulate datasets of different dimensionality with the same model, without having to re-write the function each time. It is also useful if you have a model, such as a spin-wave model, where the calculation is easier if the co-ordinate system is (H,0,0) / (0,K,0) / (0,0,L). 
 
 Further information concerning simulations can be found in the `Simulations <List_of_functions#Fitting>`__ section of the list of functions.
-
 
 SQW generation and manipulation
 ===============================

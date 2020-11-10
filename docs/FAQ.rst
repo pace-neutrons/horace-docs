@@ -4,7 +4,11 @@ FAQ
 
 Some frequently asked questions about Horace
 
-=Can I include more than one data file (spe/nxspe) with the same experimental configuration in an sqw file?=
+
+Can I include more than one data file (spe/nxspe) with the same experimental configuration in an sqw file?
+----------------------------------------------------------------------------------------------------------
+
+
 
 Yes! The ``gen_sqw`` routine will check for repeat entries of filenames, so that you cannot accidentally include the same run twice. But you can have the same experimental conditions (Ei and psi) for different runs and include them. For example, suppose you had the same values of psi and Ei for file1 and fileN-1, and file2 and fileN, in the example below:
 
@@ -28,7 +32,11 @@ Yes! The ``gen_sqw`` routine will check for repeat entries of filenames, so that
 
 In the resultant sqw file the data from file1 and fileN-1, and file2 and fileN, will be combined and normalised correctly.
 
-=The difference between sqw and dnd objects=
+
+The difference between sqw and dnd objects
+------------------------------------------
+
+
 
 The technical differences between dnd and sqw objects are dealt with in `Advanced use <Advanced_use#Creating_an_object_from_scratch>`__. Both data objects contain the same arrays of signals, variances, plot and integration axis coordinates etc., but the sqw object contains an additional array which provides detailed information about every detector-energy pixel from every run which contributed to the signal in the object. It also contains more information about the original contributing NXSPE files and in particular allows for instrument information to be stored that enables resolution convolution to be performed.
 
@@ -39,8 +47,6 @@ Memory requirements
 
 
 Equivalent sqw and dnd objects require vastly different amounts of computer memory. The dnd object is usually relatively small (typical 0.1-10MB), whereas an sqw object can easily be >1GB. This is because in the sqw object, nine numbers (see `Advanced use <Advanced_use#Creating_an_object_from_scratch>`__ for details) are retained about each detector-energy pixel element that contributed to the observed signal. In a normal Horace experiment this often equates to many millions of detector elements, hence the large memory requirement to store all this information. SQW files that are created from experiments can exceed 1TB if read into memory: don't try to do that unless you are very sure about the size of the file and the memory on your computer!
-
-
 
 Implications for simulations and fitting
 ========================================
@@ -59,7 +65,11 @@ A caveat to this is the case where the S(Q,w) model does not give a 3-dimensiona
 
 
 
-=I've got a problem and I can't find figure out how to solve it from the information on this website!=
+
+I've got a problem and I can't find figure out how to solve it from the information on this website!
+----------------------------------------------------------------------------------------------------
+
+
 
 First, double check that the information really isn't hidden away on the website somewhere by using the **search** tool located on the left-hand side of all the pages on this website. In the case that you have found the function that you need but it is crashing even though you have checked that you are using it correctly, make sure you have the latest version of Horace installed.
 

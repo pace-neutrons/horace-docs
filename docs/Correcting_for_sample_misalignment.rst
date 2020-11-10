@@ -4,7 +4,9 @@ Correcting_for_sample_misalignment
 
  When mounting your sample on a spectrometer, it can often be the case that it is slightly misaligned compared the to the 'perfect' alignment assumed when generating the SQW file (the u and v vectors provided in ``gen_sqw`` and ``accumulate_sqw``). It is straightforward to correct such misalignment once enough data have been accumulated by comparing the positions of Bragg peaks compared to what they should be. The alignment correction is thus a process to be done in several steps - first the misalignment must be determined and checked, and then the correction must be applied to the data.
 
-=Step 1 - determine the true positions of Bragg peaks=
+
+Step 1 - determine the true positions of Bragg peaks
+----------------------------------------------------
 
 
 bragg_positions
@@ -68,7 +70,11 @@ the plot functions for these methods.]
 
 \ ``wpeak`` - an array of spectra, size n-by-3, that summarise the peak analysis. Pass to ``bragg_positions_view`` together with ``wcut`` to view the output. [Note: for aficionados: the cuts are IX_dataset_1d objects and can also be plotted using the plot functions for these objects.]
 
-=Step 2 - check the Bragg positions fits worked properly=
+
+Step 2 - check the Bragg positions fits worked properly
+-------------------------------------------------------
+
+
 
 You can make plots of the cuts and fits of your notional Bragg peaks to check that the program has correctly fitted everything, using outputs from the ``bragg_positions`` describe above.
 
@@ -86,7 +92,11 @@ You can make plots of the cuts and fits of your notional Bragg peaks to check th
 
 You will be prompted in the Matlab command window as to which plot and fit you wish to view. Press 'q' to exit this interactive mode. It is important to use this function to scrutinise the peaks and the fits because there many parameters that may need adjusting depending on the degree of misalignment of your crystal: the length, binning and thicknesses of the cuts you specified in ``bragg_positions``, the quality of the cuts (for example the Bragg peaks may be near gaps in the detectors so the cuts are poorly defined), the Bragg peaks may have strange shapes which deceived the automatic fitting etc.
 
-=Step 3 - calculate the misalignment correction=
+
+Step 3 - calculate the misalignment correction
+----------------------------------------------
+
+
 
 Using the outputs of ``bragg_positions``, together with certain optional keyword arguments, you can determine a transformation matrix that goes from the original misaligned frame to the correct aligned frame.
 
@@ -150,7 +160,10 @@ argument rlu, in the refined crystal lattice. (Ang^-1)
 \ ``rotangle`` - Angle of rotation corresponding to rotmat (to give a measure
 of the misorientation) (degrees)
 
-=Step 4 - apply the correction to the data=
+Step 4 - apply the correction to the data
+-----------------------------------------
+
+
 
 There are two ways to do this, either to apply the correction to an existing file without regenerating (good for when you have a complete scan). Or you can calculate what the goniometer offsets ``gl, gs, dpsi`` are, and then use these when you regenerate the sqw file (good for situations when you are still accumulating data, such as on the beamline during an experiment).
 
@@ -260,11 +273,10 @@ The **outputs** are:
 
 \ ``rlu_corr`` - the orientation correction matrix to go from the notional to the real crystal (see above)
 
+List of alignment correction routines
+-------------------------------------
 
 
-
-
-=List of alignment correction routines=
 
 Below we provide a brief summary of the routines available for different aspects of alignment corrections. For further information type
 
@@ -281,7 +293,6 @@ Below we provide a brief summary of the routines available for different aspects
 
 
 in the Matlab command window.
-
 
 bragg_positions
 ===============
@@ -303,7 +314,6 @@ bragg_positions
 
 Get actual Bragg peak positions, given initial estimates of their positions, from an sqw object or file
 
-
 bragg_positions_view
 ====================
 
@@ -322,7 +332,6 @@ bragg_positions_view
 
 
 View the output of fitting to Bragg peaks performed by ``bragg_positions``
-
 
 calc_proj_matrix
 ================
@@ -343,7 +352,6 @@ calc_proj_matrix
 
 Calculate matrix that convert momentum from coordinates in spectrometer frame to projection axes defined by u1 \|\| a*, u2 in plane of a\* and b\ i.e. crystal Cartesian axes. Allows for correction scattering plane (omega, dpsi, gl, gs) - see Tobyfit for conventions
 
-
 crystal_pars_correct
 ====================
 
@@ -362,7 +370,6 @@ crystal_pars_correct
 
 
 Return correct lattice parameters and crystal orientation for gen_sqw from a matrix that corrects the r.l.u.
-
 
 refine_crystal
 ==============
@@ -383,7 +390,6 @@ refine_crystal
 
 Refine crystal orientation and lattice parameters
 
-
 rlu_corr_to_lattice
 ===================
 
@@ -403,7 +409,6 @@ rlu_corr_to_lattice
 
 Extract lattice parameters and orientation matrix from rlu correction matrix and reference lattice parameters
 
-
 ubmatrix
 ========
 
@@ -422,7 +427,6 @@ ubmatrix
 
 
 Calculate UB matrix that transforms components of a vector given in r.l.u. into the components in an orthonormal frame defined by the two vectors u and v (each given in r.l.u)
-
 
 uv_correct
 ==========

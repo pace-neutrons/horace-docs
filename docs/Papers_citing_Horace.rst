@@ -4,7 +4,6 @@ Papers_citing_Horace
 
  Here we list published papers containing work which required the use of Horace.
 
-
 2010
 ====
 
@@ -12,7 +11,6 @@ Papers_citing_Horace
    - Magnetic excitations of the gapped quantum spin dimer antiferromagnet Sr3Cr2O8\ *. D. L. Quintero-Castro, B. Lake, E. M. Wheeler, A. T. M. N. Islam, T. Guidi, K. C. Rule, Z. Izaola, M. Russina, K. Kiefer, and Y. Skourski; Phys. Rev. B*\ **81**\ , 014415 (2010).
 
    - The New Cold Neutron Time-of-Flight Spectrometer IN5\ *. J. Ollivier, H. Mutka, and L. Didier, Neutron News*\ **21**\ (2010).
-
 
 2011
 ====
@@ -39,7 +37,6 @@ Papers_citing_Horace
 
    - Spin dynamics of molecular nanomagnets unravelled at atomic scale by four-dimensional inelastic neutron scattering\ *. M. L. Baker, T. Guidi, S. Carretta, J. Ollivier, H. Mutka, H. U. Güdel, G. A. Timco, E. J. L. McInnes, G. Amoretti, R. E. P. Winpenny, P. Santini. Nature Physics*\ **8**\ ,906--911 (2012).
 
-
 2013
 ====
 
@@ -54,7 +51,6 @@ Papers_citing_Horace
    - Antiferromagnetic spin ice correlations at (1/2,1/2,1/2) in the ground state of the pyrochlore magnet Tb2Ti2O7\ *. K. Fritsch, K. A. Ross,, Y. Qiu, J. R. D. Copley, T. Guidi, R. I. Bewley, H. A. Dabkowska, and B. D. Gaulin, Phys. Rev. B*\ **87**\ , 094410 (2013).
 
    - Symmetric and asymmetric excitations of a strong-leg quantum spin ladder\ *. D. Schmidiger, S. Mühlbauer, A. Zheludev, P. Bouillot, T. Giamarchi, C. Kollath, G. Ehlers, and A. M. Tsvelik, Phys. Rev. B*\ **88**\ , 094411 (2013)
-
 
 2014
 ====
@@ -75,14 +71,12 @@ Papers_citing_Horace
 
    - Spin-Wave Spectrum of the Quantum Ferromagnet on the Pyrochlore Lattice Lu2V2O7\ *. M. Mena, R. S. Perry, T. G. Perring, M. D. Le, S. Guerrero, M. Storni, D. T. Adroja, Ch. Rüegg, and D. F. McMorrow, Phys. Rev. Lett.*\ **113**\ , 047202 (2014)
 
-
 2015
 ====
 
 
 
    - Field-tunable spin-density-wave phases in Sr3Ru2O7\ *. C. Lester, S. Ramos, R. S. Perry, T. P. Croft, R. I. Bewley, T. Guidi, P. Manuel, D. D. Khalyavin, E. M. Forgan and S. M. Hayden, Nature Materials*\ **14**\ , 373--378 (2015)
-
 
 2016
 ====
@@ -108,7 +102,6 @@ Papers_citing_Horace
    - Complex optimization for big computational and experimental neutron datasets\ *, Feng Bao, Richard Archibald, Jennifer Niedziela, Dipanshu Bansal and Olivier Delaire, Nanotechnology*\ **27**\ , 484002 (2016)
 
    - Magnetic structure and magnon dynamics of the quasi-two-dimensional antiferromagnet FePS3\ *, D. Lancon, H. C. Walker, E. Ressouche, B. Ouladdiaf, K. C. Rule, G. J. McIntyre, T. J. Hicks, H. M. Ronnow and A. R. Wildes, Physical Review B*\ **94**\ , 214407 (2016)
-
 
 2017
 ====
@@ -154,7 +147,6 @@ Papers_citing_Horace
    - Magnetic Exchange Interactions in the Molecular Nanomagnet Mn-12\ *, A. Chiesa, T. Guidi, S. Carretta, S. Ansbro, G. A. Timco, I. Vitorica-Yrezabal, E. Garlatti, G. Amoretti, R. E. P. Winpenny and P. Santini, Physical Review Letters*\ **119**\ , 217202 (2017)
 
    - Pseudo-Goldstone Magnons in the Frustrated S=3/2 Heisenberg Helimagnet ZnCr2Se4 with a Pyrochlore Magnetic Sublattice\ *, Y. V. Tymoshenko, Y. A. Onykiienko, T. Mueller, R. Thomale, S. Rachel, A. S. Cameron, P. Y. Portnichenko, D. V. Efremov, V. Tsurkan, D. L. Abernathy, J. Ollivier, A. Schneidewind, A. Piovano, V. Felea, A. Loidl and D. S. Inosov, Physical Review X*\ **7**\ , 041049 (2017)
-
 
 2018
 ====

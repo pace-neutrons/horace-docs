@@ -4,7 +4,6 @@ Unary_operations
 
  A unary operation is one that is performed on a single object, with no additional inputs. A single object is returned.
 
-
 unary plus
 ==========
 
@@ -26,7 +25,6 @@ Unary plus. Returns the input object ``win`` with no modification.
 
 Equivalent to
 \ ``wout = uplus(win)``
-
 
 unary minus
 ===========

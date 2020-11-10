@@ -2,10 +2,13 @@
 Main_Page
 #########
 
- ==Horace: visualising and manipulating S(**Q**,w) measured in all four dimensions==
+
+Horace: visualising and manipulating S(**Q**,w) measured in all four dimensions
+===============================================================================
+
+
 
 Horace is a suite of programs for the visualisation and analysis of large datasets from time-of-flight neutron inelastic scattering spectrometers. The theory behind, and application of, Horace has been published in Nuclear Instruments and Methods in Physics Research. It is freely available online `here <http://www.sciencedirect.com/science/article/pii/S016890021630777X>`__, from where you can also download a pdf copy under the `Creative Commons Attribution License <https://creativecommons.org/licenses/by/4.0/>`__. Please cite this paper if you have used Horace in your research. More details about citing Horace can be found `here <How_to_cite_Horace>`__.
-
 
 News
 ====
@@ -13,7 +16,6 @@ News
 
 
 - `General Horace news <News>`__
-
 
 Download, support & updates
 ===========================
@@ -80,7 +82,6 @@ Citing Horace
 - `How to cite Horace <How_to_cite_Horace>`__
 
 - `Papers citing Horace <Papers_citing_Horace>`__
-
 
 For Developers
 ==============

@@ -2,7 +2,11 @@
 Horace_Workshop
 ###############
 
- =Horace & SpinW Workshop - 21st to 25th January 2019=
+
+Horace & SpinW Workshop - 21st to 25th January 2019
+---------------------------------------------------
+
+
 
 \ **Back again by popular demand!**
 
@@ -10,14 +14,12 @@ Horace_Workshop
 
 Another training course on how to get the most out of the Horace software package will be held, and once again it will be a joint workshop with the `SpinW <https://www.psi.ch/spinw>`__ team. The course will be split into two parts, with 2 days spent on Horace and 2.5 days spent on SpinW. Participants may attend either or both of the two workshops.
 
-
 Where
 =====
 
 
 
 The workshop will be held at the `ISIS neutron source <http://www.isis.stfc.ac.uk/>`__, Rutherford Appleton Laboratory, U.K. . Accommodation is available (and already booked) for all participants at the on-site `Ridgeway House guesthouse <http://www.stfc.ac.uk/about-us/where-we-work/rutherford-appleton-laboratory/ridgeway-house/>`__. Participants must cover their own transportation and accommodation costs - rooms are £60 per night (including all meals).
-
 
 When
 ====
@@ -29,7 +31,6 @@ When
 
 \ **SpinW part**: 23rd - 25th January 2019.
 
-
 Registration
 ============
 
@@ -39,11 +40,8 @@ The course is **free**. `Please register HERE <https://docs.google.com/forms/d/e
 
 The deadline for registration is 09:000 GMT on Monday 10th December 2018. Participation is limited to 20 places for both courses. On the registration site you will be asked about your reasons for attending the course(s) - in the event of oversubscription we will use these answers to determine places. Priority will be given to PhD students whose thesis work will make use of these codes, and to scientists who are planning or have already done time-of-flight INS experiments.
 
-
 Topics
 ======
-
-
 
 
 Horace course
@@ -73,8 +71,6 @@ SpinW course
 - Finding the right magnetic ground state
 - Fitting inelastic neutron scattering data (powder, single crystal)
 - New features
-
-
 
 Course prerequisites
 ====================

@@ -4,14 +4,12 @@ s_new
 
  On this page we give details of significant changes between various releases of Horace. Minor debugs will not be listed here.
 
-
 Version 2.0.2
 =============
 
 
 
 Released December 2011
-
 
 Major changes
 *************
@@ -26,15 +24,12 @@ There is now a tool to enable you to calculate quickly the coverage of Q-space y
 
 It is now no longer a requirement to install Libisis as well as Horace. The only bits of Libisis that were required were graphics and some low-level routines for fitting. These have now been replaced by a much smaller package called Herbert, which contains no Fortran or other mex files.
 
-
-
 Version 2.0.1
 =============
 
 
 
 Released November 2009
-
 
 Major changes
 *************
@@ -57,14 +52,12 @@ There is now a quick and easy way to get started with Horace without the need to
 
 It is now possible to perform symmetry operations on cuts and slices (e.g. fold -H on to H) to improve the statistics on a given cut/slice. You can also now create symmetrised datasets, whereby data from equivalent Brillouin zones are combined together and written out into a new file.
 
-
 Version 1.0
 ===========
 
 
 
 Released May 2009 - the first version of Horace available to the public.
-
 
 Major changes
 *************

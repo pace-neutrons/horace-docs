@@ -7,7 +7,6 @@ Herbert is the collection of utilities for visualisation and analysis of neutron
 
 It has been extracted from Libisis to simplify Horace installation and can be considered as `Libisis <http://www.libisis.org/Main_Page>`__ stripped of the data reduction capabilities.
 
-
 Installation
 ************
 
@@ -84,7 +83,6 @@ or selecting this option from the GUI (File->preferences->general->update toolbo
 Herbert becomes available after starting matlab typing herbert_on. Alternatively, you can add herbert_on to your startup file. 
 
 Under Uinx-like OS you usually need to be an administrator, to edit /toolbox folder, so any other convenient location, where you have write access can be used instead.
-
 
 Main Capabilities
 =================

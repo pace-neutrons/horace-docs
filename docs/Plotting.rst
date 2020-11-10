@@ -4,7 +4,6 @@ Plotting
 
  An exhaustive list of commands to do with plotting your data - one of the primary functions of Horace!
 
-
 plot
 ====
 
@@ -27,7 +26,6 @@ Plot a dnd or sqw object. This does not work for 0-dimensional objects (single p
 
 
 The second line of code (with outputs) gives outputs that are Matlab handles to the figure window, the axes, and the plot respectively. These are useful if, for example, you wish to resize the axes, change the font size of labels, etc.
-
 
 smooth
 ======
@@ -52,7 +50,9 @@ smooth
 
 \ **IMPORTANT NOTE** You can only apply smoothing to dnd objects, **not** to sqw objects, since with the latter you would be destroying the very pixel information that the object is designed to hold. To convert an sqw object (``win``) to a dnd, simply type ``wout=d1d(win)``, if ``win`` is 1-dimensional, ``wout=d2d(win)`` if it is 2-dimensional, and so on.
 
-=Altering plot characteristics and other useful commands=
+
+Altering plot characteristics and other useful commands
+-------------------------------------------------------
 
 
 Colour of lines and markers
@@ -84,7 +84,6 @@ e.g. for a red plot:
    
    acolor red
    
-
 
 
 
@@ -137,8 +136,6 @@ To change multiple characteristics, type e.g.
 
 Type ``help aline`` in Matlab for a full list of options.
 
-
-
 Marker style
 ============
 
@@ -161,8 +158,6 @@ You can change the style of marker in a 1-dimensional plot in a similar way to t
 
 
 Type ``help amark`` in Matlab for a full list of options.
-
-
 
 Axes Limits
 ===========
@@ -221,7 +216,6 @@ You can also change the axes scales to be linear or logarithmic using
 
 
 
-
 Cursor
 ======
 
@@ -256,7 +250,6 @@ Alternatively, to use a cursor to select x and y values and print them in the Ma
    
    [x,y]=xyselect
    
-
 
 
 
@@ -296,10 +289,13 @@ If you have multiple figures open and you wish to alter one of them (e.g. by app
 Note that both of these options are also available in drop-down menus in the figures windows themselves.
 
 
-=One dimensional plots=
+
+One dimensional plots
+---------------------
+
+
 
 In the following the object being plotted can be a single sqw or dnd object, or an array of objects.
-
 
 dd (draw data)
 ==============
@@ -319,7 +315,6 @@ Plotting command for 1-dimensional objects only, plotting markers, errorbars, an
    
    [figureHandle_, axesHandle_, plotHandle_] =  dd(w_1d)
    
-
 
 
 
@@ -344,7 +339,6 @@ Plot line between points for a 1-dimensional object. No markers or errorbars dis
 
 
 
-
 dm (draw markers)
 =================
 
@@ -363,7 +357,6 @@ Plot markers at points for a 1-dimensional object. No line or errorbars displaye
    
    [figureHandle_, axesHandle_, plotHandle_] = dm(w_1d)
    
-
 
 
 
@@ -388,7 +381,6 @@ Plot markers and errorbars for a 1-dimensional object. No lines linking points a
 
 
 
-
 de (draw errors)
 ================
 
@@ -407,7 +399,6 @@ Plot errorbars at points for a 1-dimensional object. No linking lines or markers
    
    [figureHandle_, axesHandle_, plotHandle_] = de(w_1d)
    
-
 
 
 
@@ -432,7 +423,6 @@ Plot histogram of a 1-dimensional object.
 
 
 
-
 pd (plot data)
 ==============
 
@@ -451,7 +441,6 @@ Overplotting command for 1-dimensional objects only, plotting markers, errorbars
    
    [figureHandle_, axesHandle_, plotHandle_] =  pd(w_1d)
    
-
 
 
 
@@ -476,7 +465,6 @@ Overplot line between points for a 1-dimensional object. No markers or errorbars
 
 
 
-
 pm (plot markers)
 =================
 
@@ -495,7 +483,6 @@ Overplot markers at points for a 1-dimensional object. No line or errorbars disp
    
    [figureHandle_, axesHandle_, plotHandle_] = pm(w_1d)
    
-
 
 
 
@@ -520,7 +507,6 @@ Overplot markers and errorbars for a 1-dimensional object. No lines linking poin
 
 
 
-
 pe (plot errors)
 ================
 
@@ -539,7 +525,6 @@ Overplot errorbars at points for a 1-dimensional object. No linking lines or mar
    
    [figureHandle_, axesHandle_, plotHandle_] = pe(w_1d)
    
-
 
 
 
@@ -564,7 +549,6 @@ Overplot histogram of a 1-dimensional object.
 
 
 
-
 ploc (plot line over current)
 =============================
 
@@ -581,7 +565,6 @@ Overplot a line in the current figure, regardless of type (i.e. can plot a 1d cu
    
    ploc(w_1d);
    
-
 
 
 
@@ -604,7 +587,6 @@ Overplot line, markers and error bars in the current figure, regardless of type.
 
 
 
-
 pmoc (plot markers over current)
 ================================
 
@@ -621,7 +603,6 @@ Overplot markers in the current figure, regardless of type.
    
    pmoc(w_1d);
    
-
 
 
 
@@ -645,7 +626,6 @@ Overplot markers and error bars in the current figure, regardless of type.
 
 
 
-
 peoc (plot errors over current)
 ===============================
 
@@ -662,7 +642,6 @@ Overplot error bars in the current figure, regardless of type.
    
    peoc(w_1d);
    
-
 
 
 
@@ -685,8 +664,8 @@ Overplot a histogram in the current figure, regardless of type.
 
 
 
-
-=Two dimensional plots=
+Two dimensional plots
+---------------------
 
 
 da (draw area)
@@ -710,7 +689,6 @@ Area plot for a two-dimensional object, with colour-scale signifying intensity. 
 
 
 
-
 ds (draw surface)
 =================
 
@@ -729,7 +707,6 @@ Surface plot for a two-dimensional object, with colour scale and contour signify
    
    [figureHandle_, axesHandle_, plotHandle_] = ds(w_2d)
    
-
 
 
 
@@ -773,7 +750,6 @@ One can optionally return figure, axes and plot handles:
 
 
 
-
 pa (plot area)
 ==============
 
@@ -807,7 +783,6 @@ Optionally return figure, axes and plot handles:
 
 
 
-
 ps (plot surface)
 =================
 
@@ -838,7 +813,6 @@ Optionally return figure, axes and plot handles:
    
    [fig_handle, axes_handle, plot_handle] = ps(w_2d)
    
-
 
 
 
@@ -878,7 +852,6 @@ Optionally return figure, axes and plot handles:
 
 
 
-
 spaghetti_plot
 ==============
 
@@ -898,8 +871,8 @@ Plots data in sqw-file or sqw-object along HKL directions.
 
 
 
-
-=Three dimensional plots=
+Three dimensional plots
+-----------------------
 
 
 sliceomatic
@@ -918,7 +891,6 @@ Sliceomatic plot of multiple area plots, for a 3-dimensional object. This functi
    
    sliceomatic(w_3d);
    
-
 
 
 
@@ -943,6 +915,9 @@ As ``sliceomatic``, but the default view is from above. In effect this means you
 
 
 
-= Miscellaneous functions =
+Miscellaneous functions
+-----------------------
+
+
 
 \ ``meta(fig)`` allows you to copy the figure into a metafile. On Windows, this function puts the file in the clipboard so that it can be pasted directly into Word, Powerpoint etc. 

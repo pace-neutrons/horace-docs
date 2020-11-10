@@ -4,8 +4,6 @@ Multifit
 
  Horace (and the parent utilities library, Herbert) comes with a rich and powerful fitting syntax that is common to the methods used to fit functions or models of S(Q,w) to one or more datasets. The documentation here is only meant to give an introduction and overview. For the full help, please use the Matlab documentation for the various fitting functions that can be obtained by using the ``doc`` command, for example ``doc d1d/multifit`` (for fitting function like Gaussians to d1d objects) or ``doc sqw/multifit_sqw`` (fitting models for S(Q,w) to sqw objects). It is strongly recommended that you use ``doc``, not ``help`` to explore how to use these methods, so that you can navigate between the numerous pages of documentation in the Matlab help window.
 
-
-
 Overview
 ========
 
@@ -40,8 +38,6 @@ Introduction to setting up and performing a fit
 
 
 All the variants of multifit share a common procedure for setting up and performing a fit - they differ only in the form of the functions which are either functions of the plot coordinates or qh,qk,ql,en. In what follows we refer to ``multifit``, but for this you can equally read ``multifit_func``, ``multifit_sqw``, ``multifit_sqw``, and even the resolution convolution program ``Tobyfit``.
-
-
 
 Simple fitting
 **************
@@ -157,8 +153,6 @@ Fitting can be computationally very expensive. Before you start fitting, it can 
 
 
 
-
-
 Background functions
 ********************
 
@@ -220,7 +214,6 @@ Similarly, if you wanted to fit a linear background to the first two datasets an
    >> kk = kk.set_fun ({@linear_bg, @linear_bg, @quad_bg});
    >> kk = kk.set_bpin ({[5.5, 0]}, [3, 0], [1.2, 0, 0]);
    
-
 
 
 
@@ -292,8 +285,6 @@ So far we've seen how to have a global 'foreground' function that applies to all
 
 
 The syntax of the last function means that parameter 2 of all foreground functions is bound to parmaeter 2 of the first function. The ratio will be unity because they were all initialised to the same value.
-
-
 
 Summary of commands with multifit
 =================================
@@ -448,14 +439,11 @@ Fit control parameters and other options:
 
 
 
-
-
 Fitting functions
 =================
 
 
 Several multifit variants are available for sqw and d1d,d2d,...d4d objects. The only substantive difference is the form of the fit functions they require: either they are functions of the numeric values of the plot coordinates, or they are function of wavevector in reciprocal lattice units and energy.
-
 
 multifit
 ********
@@ -495,15 +483,11 @@ where
 - pars Parameters needed by the function
 - c1,c2,... Any further constant arguments needed by the function. For example, they could be the filenames of lookup tables
 
-
-
 multifit_func
 *************
 
 
 This method is identical to ``multifit``.
-
-
 
 multifit_sqw
 ************
@@ -571,8 +555,6 @@ where
 - x1,x2,.xn Arrays of x coordinates along each of the n dimensions
 - pars Parameters needed by the function
 - c1,c2,... Any further constant arguments needed by the function. For example, they could be the filenames of lookup tables
-
-
 
 multifit_sqw_sqw
 ****************

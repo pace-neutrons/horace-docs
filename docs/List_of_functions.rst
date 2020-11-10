@@ -121,15 +121,4 @@ List_of_functions
 - `sqw <Changing_object_type#sqw>`__
 - `IX_dataset_1d <Changing_object_type#IX_dataset_1d>`__
 - `IX_dataset_2d <Changing_object_type#IX_dataset_2d>`__
-- `IX_dataset_3d <Changing_object_type#IX_dataset_3d>`__ For_Developers 20080911124036 \ **MediaWiki has been successfully installed.**\ 
-
-Consult the `User's Guide <http://meta.wikimedia.org/wiki/Help:Contents>`__ for information on using the wiki software.
-
-
-Getting started
-===============
-
-
-- `Configuration settings list <http://www.mediawiki.org/wiki/Manual:Configuration_settings>`__
--  `MediaWiki FAQ <http://www.mediawiki.org/wiki/Manual:FAQ>`__
--  `MediaWiki release mailing list <http://lists.wikimedia.org/mailman/listinfo/mediawiki-announce>`__ Contents 20090204110005 Consult the `User's Guide <http://meta.wikimedia.org/wiki/Help:Contents>`__ for information on using the wiki software. 
+- `IX_dataset_3d <Changing_object_type#IX_dataset_3d>`__ 

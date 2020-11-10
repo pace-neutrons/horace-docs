@@ -2,7 +2,11 @@
 Developer_info
 ##############
 
- == Github ==
+
+Github
+======
+
+
 
 The Horace code can be accessed on github where it exists as part of `PACE-Neutrons <https://github.com/pace-neutrons>`__ project. To use Horace you also need Herbert, so you can clone Horace and Herbert from appropritate `Herbert <https://github.com/pace-neutrons/Herbert>`__ and `Horace <https://github.com/pace-neutrons/Horace>`__ Git repositories. To get write access to Horace/Herbert you must request the permission from the repositories administrators. Alternatively, clone project from Master, make your changes to a branch and issue a pull request which will be considered by Horace team.
 

@@ -2,7 +2,11 @@
 Changing_object_type
 ####################
 
- ==dnd==
+
+dnd
+===
+
+
 
 Convert an n-dimensional sqw object into the equivalently dimensioned object out of d0d, d1d, d2d, d3d, d4d d0d object (i.e. throw away the pixel information)
 
@@ -15,7 +19,6 @@ Convert an n-dimensional sqw object into the equivalently dimensioned object out
    
    wout_dnd=dnd(win_sqw)
    
-
 
 
 
@@ -38,7 +41,6 @@ Convert an 0-dimensional sqw object into a d0d object (i.e. throw away the pixel
 
 
 
-
 d1d
 ===
 
@@ -55,7 +57,6 @@ Convert an 1-dimensional sqw object into a d1d object (i.e. throw away the pixel
    
    wout_d1d=d1d(win_sqw)
    
-
 
 
 
@@ -78,7 +79,6 @@ Convert an 2-dimensional sqw object into a d2d object (i.e. throw away the pixel
 
 
 
-
 d3d
 ===
 
@@ -95,7 +95,6 @@ Convert an 3-dimensional sqw object into a d3d object (i.e. throw away the pixel
    
    wout_d3d=d3d(win_sqw)
    
-
 
 
 
@@ -118,7 +117,6 @@ Convert an 4-dimensional sqw object into a d4d object (i.e. throw away the pixel
 
 
 
-
 sqw
 ===
 
@@ -135,7 +133,6 @@ Convert a dnd object into an n-dimensional sqw object
    
    wout_sqw=sqw(win_dnd)
    
-
 
 
 
@@ -158,7 +155,6 @@ Convert an 1-dimensional sqw/dnd object into the generic Herbert IX_dataset_1d o
 
 
 
-
 IX_dataset_2d
 =============
 
@@ -175,7 +171,6 @@ Convert an 2-dimensional sqw/dnd object into the generic Herbert IX_dataset_2d o
    
    wout_IX=IX_dataset_2d(win_sqw)
    
-
 
 
 

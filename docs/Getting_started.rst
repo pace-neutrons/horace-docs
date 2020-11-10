@@ -16,8 +16,6 @@ which relate to a real experiment to investigate spin excitations in Fe using th
 
 Before starting you must first extract the data files from the supplied zip file. You should find SPE files with names MAP11014.SPE, MAP11016.SPE, ..., MAP11060.SPE, as well as a PAR file called demo_par.PAR and a PHX file called demo_phx.PHX.
 
-
-
 Creating an SQW file
 ====================
 
@@ -153,7 +151,13 @@ If after your experiment you realise that your crystal was not aligned how you t
 
 The definitions of these angles are best described with reference to the picture below:
 
-\ `300px|Virtual goniometer angle definitions <image:Gonio_angle_definitions.jpg>`__
+
+.. image:: images/Gonio_angle_definitions.jpg
+   :width: 300px
+   :alt: Virtual goniometer angle definitions 
+
+
+
 
 In this diagram the nominal vectors **``u``** and **``v``** are those supplied to Horace, whereas **``u``**\ ``'`` and **``v``**\ ``'`` are the actual vectors. ``gl`` and ``gs`` deal with misorientation about axes which lie in the spectrometer's equatorial plane, whereas ``dpsi`` deals with misorientations about a vector perpendicular to this plane. ``omega`` is the angle by which the ``gs`` axis is rotated compared to the nominal vector **``u``**.
 
@@ -228,7 +232,13 @@ We are now ready to make our SQW file! This is done by a single function:
 
 If everything has worked then the Matlab command window will show text like this, which will be updated when each successive SPE file is read from the disk.
 
-\ `500px|The command window display during gen_sqw <image:Screenshot1.png>`__
+
+.. image:: images/Screenshot1.png
+   :width: 500px
+   :alt: The command window display during gen_sqw 
+
+
+
 
 
 (Note that the above screenshot was created when processing a larger number of files from the same dataset as has been used for this demo. The only practical difference this makes is to the size of errorbars in 1d cuts, the time taken to process the data, and some of the on-screen printouts.)
@@ -236,7 +246,13 @@ If everything has worked then the Matlab command window will show text like this
 Further through the process you should see something like this:
 
 
-\ `500px|The command window display during gen_sqw <image:Screenshot2.png>`__
+
+.. image:: images/Screenshot2.png
+   :width: 500px
+   :alt: The command window display during gen_sqw 
+
+
+
 
 Notice that this was run on a Linux machine, hence the different style of directory name and appearance of the Matlab window.
 
@@ -244,8 +260,6 @@ Notice that this was run on a Linux machine, hence the different style of direct
 Horace will now run for some time generating the SQW file. This can be quite a long time, and depends quite a lot on how much memory your computer has and its processor speed. It is probably best at this stage just to leave your computer to run and go for a coffee! As a rough guide 150 SPE files, each of 105MB, would be combined on a machine with 4GB of RAM (with its `3GB switch enabled <Download_and_setup#System_Requirements>`__) and a speed of 2.5GHz in about 2 hours.
 
 For this demo the data files have purposely been made much smaller (by using only the low angle detector banks on MAPS, and by only including a limited number of energy bins in the SPE files). Each SPE file is about 18MB, and thus it takes about 8 minutes to process all of the data. If all is well messages will be frequently printed to the Matlab command window to let you know the status of your SQW file generation.
-
-
 
 Data visualisation
 ==================
@@ -331,7 +345,13 @@ We now have all the information needed to make any kind of cut we like. Let's st
 
 
 
-\ `500px|Matlab window during cutting <image:Screenshot_cut1.png>`__
+
+.. image:: images/Screenshot_cut1.png
+   :width: 500px
+   :alt: Matlab window during cutting 
+
+
+
 
 
 This slice has as its axes (0,1,0) and energy. The first two arguments in the function ``cut_sqw`` are where the data is on the computer, and the details of the projections. The next four arguments give either the integration range or the step size of each component of Q and energy. In this example we are integrating between -0.2 and 0.2 r.l.u. in the (1,0,0) component, and between -0.2 and 0.2 in the (0,0,1) component. The slice axes are (0,0,1) whose step size is 0.05 r.l.u., and energy whose step size is the minimum possible (this would have been specified when you Homered your data). Notice that we've specified the energy step size differently from the (0,0,1) step size. If a scalar is used then the whole range of data along that axis will be plotted. If a vector of the form [low,step,high] is used then only data within the range low -> high will be plotted, with step size given by ``step``.
@@ -351,7 +371,13 @@ We don't yet get a plot of this slice. All we've done here is create an 'sqw' ob
 
 
 
-\ `301px|2d cut from the data <image:Screenshot_cut2.png>`__
+
+.. image:: images/Screenshot_cut2.png
+   :width: 301px
+   :alt: 2d cut from the data 
+
+
+
 
 The ranges of the axes are not quite right, but we can easily change that:
 
@@ -369,7 +395,13 @@ The ranges of the axes are not quite right, but we can easily change that:
 
 
 
-\ `301px|2d cut from data, with plot axes modified <image:Screenshot_cut3.png>`__
+
+.. image:: images/Screenshot_cut3.png
+   :width: 301px
+   :alt: 2d cut from data, with plot axes modified 
+
+
+
 
 This makes the horizontal axis go from 1 to 3, the vertical axis from 0 to 150, and the colour scale go from 0 to 1.
 
@@ -393,14 +425,26 @@ If we wanted to make a 1D cut through the data then the syntax is exactly the sa
 
 
 
-\ `301px|1d cut <image:Screenshot_1dcut.png>`__
+
+.. image:: images/Screenshot_1dcut.png
+   :width: 301px
+   :alt: 1d cut 
+
+
+
 
 would give us a cut along the (0,k,0) axis at a constant energy of 65meV.
 
 
 3D slices are also possible. To visualize these the 'sliceomatic' program is used. When the plot command is executed a GUI is launched that allows you to plot multiple slices through the data. For example you could plot the same slice with x and y axes of (1,0,0) and (0,1,0) at a range of energies.
 
-\ `501px|Sliceomatic in action <image:Screenshot_3dslice.png>`__
+
+.. image:: images/Screenshot_3dslice.png
+   :width: 501px
+   :alt: Sliceomatic in action 
+
+
+
 
 
 It is possible to save your cuts / slices to be viewed again later. This can be done very simply in two ways. If you add an extra argument to the end of ``cut_sqw``, then the cut data are sent to a file. For our 1D cut above this would be:
@@ -554,7 +598,13 @@ Next make a new 2D slice by replicating the cut along one of the integration axe
 
 
 
-\ `300px|2d cut made by replicating a 1d cut <image:Screenshot_background_replicated.png>`__
+
+.. image:: images/Screenshot_background_replicated.png
+   :width: 300px
+   :alt: 2d cut made by replicating a 1d cut 
+
+
+
 
 
 This is a 2D slice that is over the same range as w110. We now subtract this from the real `data:
@@ -574,7 +624,13 @@ This is a 2D slice that is over the same range as w110. We now subtract this fro
 
 
 
-\ `300px|Background-subtracted data <image:Screenshot_background_subtracted.png>`__
+
+.. image:: images/Screenshot_background_subtracted.png
+   :width: 300px
+   :alt: Background-subtracted data 
+
+
+
 
 
 
@@ -605,7 +661,13 @@ It is often the case that you do not have a full model of S(**Q**,E), but rather
 
 This should give a plot that looks like this:
 
-\ `300px|2d data <image:Screenshot_CutToSim.png>`__
+
+.. image:: images/Screenshot_CutToSim.png
+   :width: 300px
+   :alt: 2d data 
+
+
+
 
 
 We will now simulate this using the demonstration function ``demo_4gauss``. This is a specially written function which works only for 2D datasets (slices) where both axes are momentum. Read through the code in 
@@ -645,7 +707,13 @@ The arguments in the square parentheses are the function inputs, and in this cas
 Notice that the syntax of the input arguments is somewhat different for ``func_eval`` compared to ``user_func``, since with the former we input the parameters as a vector, rather than as separate arguments. The form of the function itself is also different, since it takes some arrays of parameters and calculates an intensity at those points, rather than taking an existing intensity array and modifying it.
 
 
-\ `300px|2d simulation <image:Screenshot_SimCut.png>`__
+
+.. image:: images/Screenshot_SimCut.png
+   :width: 300px
+   :alt: 2d simulation 
+
+
+
 
 
 \ ``func_eval`` works for both sqw and dnd objects with almost the same syntax. For sqw objects pixel information is simulated according to the intensity calculated for the data grid, whereas for dnd objects this is not required. It is also possible to simulate a dnd from a template sqw object by using an additional keyword argument of the form
@@ -681,10 +749,6 @@ There is another way of performing a simulation, using a different method and a 
 
 
 In general it is better to use ``func_eval`` for simple functions such as Gaussians and so on, and sqw for "proper" models of the scattering. The different syntax makes it easier to keep track of what kind of model for the scattering is being employed. As before, the keyword 'all' can be added to the arguments of this function, however in this case it is ignored if the object ``w_template`` is an sqw object. If ``w_template`` is a dnd object then as for func_eval the keyword 'all' ensures that data are simulated over the entire data range. As with ``func_eval``, the parameters passed to the function can either take the form of a vector of numerical parameters, or a cell array comprising any other form of input.
-
-
-
-
 
 Fitting
 =======

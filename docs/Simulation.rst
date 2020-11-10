@@ -6,8 +6,6 @@ Simulation
 
 \ **IMPORTANT** When simulating an S(Q,w) model (see sqw_eval below), bear in mind the difference between what is calculated for equivalent dnd and sqw datasets. See `FAQ <FAQ>`__.
 
-
-
 func_eval
 =========
 
@@ -33,8 +31,6 @@ This evaluates a user-supplied function at the x, y, z, ... values of an n-dimen
 - ``myfunc`` is the name of a user-defined function to calculate the intensity at the points in the dataset(s). The function must be of the form ``y = mfunc(x1, x2, ..., xn, p)``, e.g. ``y = gauss2d(x1, x2, [amplitude, centre1, centre2, width1, width2, background])`` and accept equal sized arrays that contain the x1, x2, ... values. ``p`` can be a row-vector containing the parameters needed by the function.
 
 The optional keyword ``'all'`` is used if you wish to calculate the intensity from the function over the whole domain covered by the input dataset. In other words, your dataset may contain gaps due to the trajectory of the detectors through reciprocal space, but you may wish to simulate the scattering even in the gaps. This option applies in the case of dnd objects, but not sqw objects.
-
-
 
 sqw_eval
 ========
@@ -72,8 +68,6 @@ The syntax for ``sqw_eval`` is almost identical to that of ``func_eval``. The on
 where ``qh, qk, ql, en`` area arrays that contain the co-ordinates in h, k, l and energy of every point in the dataset, irrespective of the dimensionality of that dataset. As before, ``p`` is a row-vector containing the parameters required by the function. These could be the values of exchange constants, intensity scale factor, or temperature, for example.
 
 One would generally use ``sqw_eval`` in preference to ``func_eval`` if, for example, one had a model of the spin-wave cross-section for magnetic scattering.
-
-
 
 dispersion
 ==========
@@ -175,8 +169,6 @@ the signal array(s) will contain the values of energy along the Q axes, and the 
 
 e.g. If ``win`` is a 2D dataset with Q and E axes, then ``wdisp`` is a 1D dataset with just the Q axis
 
-
-
 disp2sqw_eval
 =============
 
@@ -213,8 +205,6 @@ The optional inputs are:
 The output is:
 
 \ ``wout`` - Output dataset or array of datasets
-
-
 
 dispersion_plot
 ===============
@@ -302,8 +292,6 @@ The outputs are as follows
 \ ``wdisp`` Array of IX_dataset_1d containing dispersion, one per dispersion relation. The x-axis is the distance in Ang^-1 along the path described 
  
 \ ``weight`` Array of IX_dataset_1d with corresponding spectral weight, one per dispersion relation
-
-
 
 disp2sqw_plot
 =============

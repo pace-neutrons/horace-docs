@@ -2,7 +2,11 @@
 Horace_and_Libisis_installation
 ###############################
 
- ===THIS PAGE IS UNDER CONSTRUCTION ===
+
+THIS PAGE IS UNDER CONSTRUCTION
+*******************************
+
+
 
 - `Libisis <http://www.libisis.org/>`__
 

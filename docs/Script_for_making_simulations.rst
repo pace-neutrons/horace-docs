@@ -2,7 +2,11 @@
 Script_for_making_simulations
 #############################
 
- = Simulations =
+
+Simulations
+-----------
+
+
 
 
 
@@ -54,7 +58,10 @@ Script_for_making_simulations
 
 
 
-= Plotting dispersion =
+Plotting dispersion
+-------------------
+
+
 
 
 

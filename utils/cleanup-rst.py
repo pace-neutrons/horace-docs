@@ -26,25 +26,29 @@ if not os.path.isdir(argList.output):
 DEBUG = argList.debug
 
 # Lazy date RE for catching datestamp - Supports up to 2010-2039 date stamps in YYYY/MM/DD+rest
-DATE_RE = r"20[1-3][0-9][01][0-9][0-3][0-9]+"
+DATE_RE = r"20[0-3][0-9][01][0-9][0-3][0-9]+"
 
 # New page determined by title datestamp
 NEWPAGE_RE = re.compile(r"(?P<title>\w+)\s+"+DATE_RE)
-TITLE_RE = re.compile("^===(?P<subtitle>[^=]+?(?====))===")
-SUBTITLE_RE = re.compile("^==(?P<subsubtitle>[^=]+)(?===)==")
+TITLE_RE = re.compile(r"^\s*===(?P<subtitle>[^=]+?)===")
+SUBTITLE_RE = re.compile(r"^\s*==(?P<subsubtitle>[^=]+)==")
+MINORTITLE_RE = re.compile(r"^\s*=(?P<minortitle>[^=]+)=")
 LIST_RE = re.compile(r"^([\\\*]*\*[\\\*]*\s*)")
 LITERAL_BLOCK_RE = re.compile(r"\s*::")
 PAPER_LIST_RE = re.compile(r"\\\*\*\\")
 TABLE_START_RE = re.compile(r"{\\?\|")
 TABLE_END_RE = re.compile(r"\|}")
+IMAGE_RE = re.compile(r"\\ `(?P<size>[0-9]+px)\|(?P<label>[^<]+)<image:(?P<path>[^>]+)>`__")
 NL_RE = re.compile(r"\n")
 ANY_MATCH_RE = re.compile("|".join(map(lambda r: r.pattern, (
     NEWPAGE_RE,
     TITLE_RE,
     SUBTITLE_RE,
+    MINORTITLE_RE,
     LIST_RE,
     LITERAL_BLOCK_RE,
     TABLE_START_RE,
+    IMAGE_RE,
     NL_RE,))))
 
 
@@ -198,6 +202,16 @@ def main(filename):
                     output()
                     line = line[match.end():]
 
+                elif MINORTITLE_RE.search(line) and match.group() == MINORTITLE_RE.search(line).group():
+                    if DEBUG:
+                        print("minortitle", match)
+                    title = match.group('minortitle').strip()
+                    output(line[:match.start()])
+                    output(title)
+                    output("-"*len(title))
+                    output()
+                    line = line[match.end():]
+
                 elif LIST_RE.search(line) and match.group() == LIST_RE.search(line).group():
                     if DEBUG:
                         print("list", match)
@@ -263,6 +277,16 @@ def main(filename):
 
                     print_table(tableData)
                     line = line[endmatch.end():]
+                elif IMAGE_RE.search(line) and match.group() == IMAGE_RE.search(line).group():
+                    output(f"""
+.. image:: images/{match.group("path")}
+   :width: {match.group("size")}
+   :alt: {match.group("label")}
+
+""")
+
+                    line = line[match.end():]
+
                 elif NL_RE.search(line) and match.group() == NL_RE.search(line).group():
                     if DEBUG:
                         print("newline", match)

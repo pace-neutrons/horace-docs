@@ -2,7 +2,11 @@
 Support_and_updates
 ###################
 
- == Support ==
+
+Support
+=======
+
+
 
 
 If you are having problems then your first port of call should be this wiki -- we have listed and described every function that is included in the Horace package. See `here <List_of_functions>`__ for details.

@@ -6,8 +6,6 @@ Fitting
 
 Several multifit variants are available for sqw and d1d,d2d,...d4d objects. The only substantive difference is the form of the fit functions they require: either they are functions of the numeric values of the plot coordinates, or they are function of wave vector in reciprocal lattice units and energy.
 
-
-
 multifit
 ========
 
@@ -41,7 +39,6 @@ where
 - x1,x2,.xn Arrays of x coordinates along each of the n dimensions
 - pars Parameters needed by the function
 - c1,c2,... Any further constant arguments needed by the function. For example, they could be the filenames of lookup tables
-
 
 multifit_sqw
 ============
@@ -81,12 +78,8 @@ weight Array containing calculated spectral weight
 
 The form for the background model(s) is the same as is required by ``multifit``.
 
-
-
 multifit_sqw_sqw
 ================
 
 
-The foreground and background function(s) are all functions of S(Q,w). The form of these models is the same as is required by ``multifit_sqw``. Privacy_policy 20090312103033 We request that you register to obtain the latest version of the Horace code, as well as emails informing you of new releases and bug-fixes (see the `downloads page <Download_and_setup>`__ for more info). Your email address and password will be stored on a secure server. From time to time your password will be emailed to you in cleartext, so please do not use a valuable password for your Horace registration. Your personal information will not be passed to any third-parties, and you will not be contact about anything other than the aforementioned updates and bug fixes to the code.
-
-If you require further information please get in touch with us via `Horace Help <mailto:horacehelp@stfc.ac.uk>`__. 
+The foreground and background function(s) are all functions of S(Q,w). The form of these models is the same as is required by ``multifit_sqw``. 

@@ -2,7 +2,11 @@
 Manipulating_and_extracting_data_from_SQW_files_and_objects
 ###########################################################
 
- ==cut_sqw==
+
+cut_sqw
+=======
+
+
 
 There are various different forms of input for this function, the purpose of which is to take data from an SQW file and turn it into a n-dimensional cut which can be plotted, manipulated, etc. The "compulsory" inputs are given as follows:
 
@@ -69,8 +73,6 @@ You may optionally choose to use non-orthogonal axes, as in the following exampl
 - ``'-nopix'`` means that the individual pixel information contributing to the resulting data is NOT retained (at present the default is to retain it, resulting in an output that is an sqw object, whereas using ``'-nopix'`` gives a dnd output).
 - ``filename`` is a string specifying a full filename (including path) for the data to be stored, in addition to being stored in the Matlab workspace. 
 
-
-
 cut
 ===
 
@@ -125,8 +127,6 @@ To take a cut from an existing sqw object and change the plot axes (i.e. use a n
 
 where ``pbin_1``, ``pbin_2``,... have the same form as for cut_sqw described above, and there are as many binning arguments as the dimensionality of the object. This is essentially the same syntax as ``cut_sqw``, but with an sqw object rather than an SQW file as the first input. The same set of optional arguments, namely ``'-nopix'`` and ``filename`` also applies.
 
-
-
 head_horace
 ===========
 
@@ -147,8 +147,6 @@ head_horace
 
 
 This is a function to give the header information in an SQW file or file to which an sqw object or dnd object has been saved, and whose full filename is given by the argument ``filename``. If the option ``'-full'`` is used then a fuller set of header information, rather than just the principal header, is returned. The purpose of this function is to read the contents regardless of your knowledge of whether or not the file contains an sqw object or a dnd object.
-
-
 
 head_sqw
 ========
@@ -171,8 +169,6 @@ head_sqw
 
 This is a function to give the header information in an SQW file or file to which an sqw object has been saved, whose full filename is given by the argument ``filename``. If the option ``'-full'`` is used then a fuller set of header information, rather than just the principal header, is returned.
 
-
-
 head_dnd
 ========
 
@@ -191,8 +187,6 @@ head_dnd
 
 
 This is a function to give the header information in file to which a dnd object has been saved, whose full filename is given by the argument ``filename``.
-
-
 
 read_horace
 ===========
@@ -213,8 +207,6 @@ read_horace
 
 This is a function to read sqw or dnd data from a file. The object type is determined from the contents of the file. If the file contains a full sqw dataset (whether created using gen_sqw or as the result of saving a cut), the returned variable is an sqw object; if the file contains a dnd dataset, the output is the corresponding d01, d1d, ...or d4d object.
 
-
-
 read_sqw
 ========
 
@@ -233,8 +225,6 @@ read_sqw
 
 
 This is a function to read sqw data from a file. Note that in this context we mean an n-dimensional dataset, which includes pixel information, that has been saved to file. This could be either a full SQW file created wusing gen_sqw, or an sqw dataset that has been saved to file. The object ``output`` will be an sqw object.
-
-
 
 read_dnd
 ========
@@ -255,8 +245,6 @@ read_dnd
 
 Exactly the same as above, but reads dnd data saved to file. If the file contains full sqw dataset, then it will be read as if it contained just a dnd dataset.
 
-
-
 save
 ====
 
@@ -275,8 +263,6 @@ save
 
 
 Saves the sqw object or dnd object ``object`` from the Matlab workspace into the file specified by ``filename``.
-
-
 
 save_xye
 ========
@@ -300,8 +286,6 @@ Save data in an sqw or dnd dataset to an ascii file.
 
 The format of the ascii file for an n-dimensional dataset is n columns of co-ordinates along each of the axes, plus one column of signal and another column of error (standard deviation).
 
-
-
 xye
 ===
 
@@ -322,8 +306,6 @@ Extract the bin centres, intensity and standard errors from an sqw or dnd object
 
 
 The output is a structure with fields S.x (bin centres if a 1D object, or cell array of vectors containing the bin centres along each axis if 2D, 3D or 4D object), S.y (array of intensities), S.e (array of estimated error on the intensities).
-
-
 
 hkle
 ====

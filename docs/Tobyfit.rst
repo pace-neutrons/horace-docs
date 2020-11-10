@@ -2,7 +2,11 @@
 Tobyfit
 #######
 
- ==Introduction==
+
+Introduction
+============
+
+
 The purpose of Tobyfit is to enable you to fit to Horace datasets taking into account the broadening of the data arising from the resolution of the instrument. Even if the excitations in your sample were infinitely long-lives you would have non-zero broadening in energy and wave vector arising from numerous contributions. The spread of energies arise from:
 - the non-zero width in the moderator pulse;
 - the non-zero pulse width from the Fermi or disk choppers;
@@ -17,7 +21,6 @@ Resolution effects can be quite considerable. Not only do they result in an incr
 Tobyfit uses the multifit fitting interface to enable you fit your data to a model for S(Q,w) together with background functions. By default the S(Q,w) model can be global to all of the datasets you pass to Tobyfit i.e. a single model that applies with the same parameter values to all datasets, with independent background functions for each of the datasets. Alternatively, you can specify that the S(Q,w) model is local i.e. the parameters vary independently for each dataset, but you can constrain parameters to be bound between the S(Q,w) models so that, for example, they all share common magnetic exchange constants but the intensities and intrinsic lifetimes can vary independently for each cut.
 
 Tobyfit therefore appears to operate just like `multifit_sqw <Multifit#multifit_sqw>`__, with the same set of capabilities of controlling parameter setting, binding etc that all other `multifit variants <Multifit>`__ have. The difference is that Tobyfit uses instrument information in the sqw objects to convolute the S(Q,w) model(s) with the instrument resolution function using a Monte Carlo multi-dimensional integration, and provides some additional methods to control how the convolution is carried out. Note that the background functions are \*not\* convoluted with the resolution function - the assumption is that they are simply empirical functions such as linear background models and so resolution function convolution makes little sense.
-
 
 Performing resolution convolution
 =================================

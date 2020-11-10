@@ -6,7 +6,10 @@ Data_diagnostics
 
 If you wish to decompose an sqw object into the data from its constituent runs, the `split <Data_diagnostics#split>`__ routine outlined below can be used. After manipulation (if necessary), such data can then be recombined using the `join <Data_diagnostics#join>`__ routine.
 
-=run_inspector=
+run_inspector
+-------------
+
+
 
 The ``run_inspector`` routine may be used on 1d or 2d sqw objects to plot the data from each individual run.
 
@@ -44,17 +47,44 @@ To toggle through the frames, there are several keyboard options:
 
 Let us illustrate the information that may be obtained by means of an example. First we generate a QE slice such as the one below
 
-\ `500px|Selected QE slice <image:Fe_slice.jpg>`__
+
+.. image:: images/Fe_slice.jpg
+   :width: 500px
+   :alt: Selected QE slice 
+
+
+
 
 We can now use ``run_inspector`` to plot a series of slices that come from a single contributing dataset, shown below.
 
-\ `500px|Frame 1 in run inspector <image:Fe_slice_run_inspector_1.jpg>`__
 
-\ `500px|Frame 11 in run inspector <image:Fe_slice_run_inspector_11.jpg>`__
+.. image:: images/Fe_slice_run_inspector_1.jpg
+   :width: 500px
+   :alt: Frame 1 in run inspector 
 
-\ `500px|Frame 21 in run inspector <image:Fe_slice_run_inspector_21.jpg>`__
 
-=split=
+
+
+
+.. image:: images/Fe_slice_run_inspector_11.jpg
+   :width: 500px
+   :alt: Frame 11 in run inspector 
+
+
+
+
+
+.. image:: images/Fe_slice_run_inspector_21.jpg
+   :width: 500px
+   :alt: Frame 21 in run inspector 
+
+
+
+
+split
+-----
+
+
 
 Split an sqw object into an array of sqw objects, each containing data from a single contributing run. So if your dataset comprises information from 100 runs, the output will be a 100-by-1 array of sqw objects.
 
@@ -70,7 +100,10 @@ Split an sqw object into an array of sqw objects, each containing data from a si
 
 
 
-=join=
+join
+----
+
+
 
 Inverse of ``split`` - takes an array of sqw objects that have been created using ``split`` and recombines them.
 
