@@ -294,8 +294,13 @@ The output is as follows:
 
 The image intensity, as the function of **Q** along the rlp path alonx x-axis and the energy transfer along y-axis is determined by the equation:
 
- weight(energy)= sfact.*exp(-(w(**Q**,\ **p**)-energy).^2/(2*sig.^2))./(sig*sqrt(2*pi));
+::
+
+   weight(energy)= sfact.*exp(-(w(**Q**,\ **p**)-energy).^2/(2*sig.^2))./(sig*sqrt(2*pi));
+
 
 where
 
- sig = fwhh/sqrt(log(256));
+::
+
+   sig = fwhh/sqrt(log(256));

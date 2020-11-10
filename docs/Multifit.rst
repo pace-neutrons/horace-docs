@@ -8,6 +8,7 @@ Overview
 ========
 
 Horace provides a set of methods for fitting sqw and d1d,d2d,...d4d objects. which all share the same fitting syntax and capabilities. The various forms of multifit enable you to:
+
 - fit a function to single dataset
 
   For example, fitting a Gaussian function to a single one-dimensional dataset
@@ -26,6 +27,7 @@ Horace provides a set of methods for fitting sqw and d1d,d2d,...d4d objects. whi
 The last functionality can be very useful if you have a model for S(Q,w) where you want to have parameters that apply globally (for example, magnetic exchange constants that define spin wave dispersion) but other parameters that can vary independently for each dataset (for example, the spin wave lifetime) . In this instance, you can define the foreground function to be local, then bind the exchange constants across all datasets with ratio unity.
 
 The following multifit variants are available for sqw and d1d,d2d,...d4d objects:
+
 - ``multifit_func`` (or equivalently ``multifit``)
 
   The foreground and background functions both are functions of the plot axes x1,x2,...
@@ -347,6 +349,7 @@ or, more generally:
 
 
 where
+
 - qh,qk,ql,en Arrays containing the coordinates of a set of points
 - p Vector of parameters needed by the model e.g. [A,js,gam] as intensity, exchange, lifetime
 - c1,c2,... Other constant parameters e.g. file name for look-up table weight Array containing calculated spectral weight
@@ -366,6 +369,7 @@ or, more generally:
 
 
 where
+
 - x1,x2,.xn Arrays of x coordinates along each of the n dimensions
 - pars Parameters needed by the function
 - c1,c2,... Any further constant arguments needed by the function. For example, they could be the filenames of lookup tables
@@ -392,7 +396,8 @@ or, more generally:
 
 
 where
+
 - qh,qk,ql,en Arrays containing the coordinates of a set of points
 - p Vector of parameters needed by the model e.g. [A,js,gam] as intensity, exchange, lifetime
 - c1,c2,... Other constant parameters e.g. file name for look-up table
-weight Array containing calculated spectral weight
+- weight Array containing calculated spectral weight

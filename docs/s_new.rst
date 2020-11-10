@@ -16,7 +16,7 @@ Major changes
 
 There is now a tool to enable you to calculate quickly the coverage of Q-space you will get at a particular energy transfer, given a certain incident energy and range of sample angles.
 
-''' *Herbert* graphics / the death of Libisis\ **
+- *Herbert* graphics / the death of Libisis
 
 It is now no longer a requirement to install Libisis as well as Horace. The only bits of Libisis that were required were graphics and some low-level routines for fitting. These have now been replaced by a much smaller package called Herbert, which contains no Fortran or other mex files.
 

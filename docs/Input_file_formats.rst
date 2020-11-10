@@ -21,6 +21,7 @@ gen_nxspe
 This is a flexible to repackage and/or save S(**Q**,w) and detector to file. To write a single NXSPE file the syntax is as follows:
 
 ::
+
    gen_nxspe(S,ERR,en,par,nxspefile_name,efix,emode,psi)
 
 
@@ -66,74 +67,40 @@ SPE file format
 The SPE file contains the intensity and estimated standard deviation on those intensities for each detector element in turn, with header blocks that give the number of detectors and energy bins, and the scattering angle and energy transfer bin boundaries. These blocks are all separated by character strings that begin with '###'. In full:
 
 
-== ==
-nd ne
-== ==
+::
 
+   nd ne
 
+   ### Phi Grid
 
-============ =
-### Phi Grid
-============ =
+   phi(1) phi(2)    phi(3)  phi(4)  phi(5)  phi(6)  phi(7)  phi(8)
+   phi(9) phi(10)   phi(11) phi(12) phi(13) phi(14) phi(15) phi(16)
+   :
+   ...    phi(nd+1)
 
+   ### Energy Grid
 
+   en(1) en(2)    en(3)  en(4)  en(5)  en(6)  en(7)  en(8)
+   en(9) en(10)   en(11) en(12) en(13) en(14) en(15) en(16)
+   :
+   ...   en(ne+1)
 
-====== ========= ======= ======= ======= ======= ======= =======
-phi(1) phi(2)    phi(3)  phi(4)  phi(5)  phi(6)  phi(7)  phi(8)
-phi(9) phi(10)   phi(11) phi(12) phi(13) phi(14) phi(15) phi(16)
-:
-...    phi(nd+1)
-====== ========= ======= ======= ======= ======= ======= =======
+   ### S(Phi,w)
 
+   S(1) S(2)  S(3)  S(4)  S(5)  S(6)  S(7)  S(8)
+   S(9) S(10) S(11) S(12) S(13) S(14) S(15) S(16)
+   :
+   ...  S(ne)
 
+   ### Errors ERR(1)  ERR(2)  ERR(3)  ERR(4)  ERR(5)  ERR(6)  ERR(7)  ERR(8)
+   ERR(9)     ERR(10) ERR(11) ERR(12) ERR(13) ERR(14) ERR(15) ERR(16)
+   :
+   ...        ERR(ne)
 
-=============== =
-### Energy Grid
-=============== =
-
-
-
-===== ======== ====== ====== ====== ====== ====== ======
-en(1) en(2)    en(3)  en(4)  en(5)  en(6)  en(7)  en(8)
-en(9) en(10)   en(11) en(12) en(13) en(14) en(15) en(16)
-:
-...   en(ne+1)
-===== ======== ====== ====== ====== ====== ====== ======
-
-
-
-============ =
-### S(Phi,w)
-============ =
-
-
-
-==== ===== ===== ===== ===== ===== ===== =====
-S(1) S(2)  S(3)  S(4)  S(5)  S(6)  S(7)  S(8)
-S(9) S(10) S(11) S(12) S(13) S(14) S(15) S(16)
-:
-...  S(ne)
-==== ===== ===== ===== ===== ===== ===== =====
-
-
-
-========== ======= ======= ======= ======= ======= ======= ======= ======
-### Errors ERR(1)  ERR(2)  ERR(3)  ERR(4)  ERR(5)  ERR(6)  ERR(7)  ERR(8)
-ERR(9)     ERR(10) ERR(11) ERR(12) ERR(13) ERR(14) ERR(15) ERR(16)
-:
-...        ERR(ne)
-========== ======= ======= ======= ======= ======= ======= ======= ======
-
-
-
-============ =
-### S(Phi,w)
-:
-### Errors
-:
-============ =
-
-
+   ### S(Phi,w)
+   :
+   ### Errors
+   :
 
 
 Here nd is the number of detectors, ne is the number of energy bins, phi contains scattering angles that are now ignored by all applications as well as Horace (set to 1,2,3...(nd+1)), en contains the energy transfer bin boundaries, and S and ERR contain the signal and standard error on the signal for each detecetor in turn.

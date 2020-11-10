@@ -22,12 +22,12 @@ During the generation of particularly large SQW datasets, which is a computation
 
 1. **Run your Horace command again**, after typing
 
-::
+   ::
 
-   >> fclose 'all'
+      >> fclose 'all'
 
 
-This command ensures that all open files are closed, as there is a limit on the number of open files Matlab can deal with. You should then run your ``gen_sqw`` again. Sometimes it will fail again, having got slightly further than the previous time (e.g. 80% of the files dealt with, as opposed to 65% before). In these cases you should use the procedure described above several times. With each iteration the command gets closer to finishing. If the command does not get any closer to finishing, even after trying the above several times, then try step 2.
+   This command ensures that all open files are closed, as there is a limit on the number of open files Matlab can deal with. You should then run your ``gen_sqw`` again. Sometimes it will fail again, having got slightly further than the previous time (e.g. 80% of the files dealt with, as opposed to 65% before). In these cases you should use the procedure described above several times. With each iteration the command gets closer to finishing. If the command does not get any closer to finishing, even after trying the above several times, then try step 2.
 
 2. Save your work, **close Matlab**, and then re-open Matlab. Note that when you have closed Matlab you should check that all Matlab processes have finished by opening the Windows Task Manager (``Ctrl-alt-delete``) and checking that no processes involving Matlab are still running. In your new Matlab session try running your command again. Again, you may have to try this several times before things start to work... If you still have not success, then try step 3.
 
