@@ -12,7 +12,7 @@ Horace is a suite of programs for the visualisation and analysis of large datase
 Download, support & updates
 ===========================
 
-- `Download and setup <Download_and_setup.rst>`__
+- `Download and setup <Download_and_setup.rst#Download>`__
 
 - `Support and updates <Support_and_updates>`__
 
