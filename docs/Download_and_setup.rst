@@ -24,7 +24,7 @@ Download
 
 - Alternatively, you should be able to build the Horace mex files for your OS (details below) if you have a C++ compiler installed and working with your MATLAB, but feel free to contact `Horace Help <mailto:HoraceHelp@stfc.ac.uk>`__, if you have problems doing that. It will also work out of the box without building any mex files, though the speed of some operations will be 2-5 times slower.
 
-- Recent Horace versions come as standalone distribution pack which includes `Herbert <Herbert>`__ (see below).
+- Recent Horace versions come as standalone distribution pack which includes `Herbert <Herbert.rst>`__ (see below).
 
 - Full Horace distribution contains Horace Demo and unit tests with the test data, which would allow you comprehensively verify your Horace installation for development purposes. If you are well familiar with Horace and do not need unit tests, you may use `Horace&Herbert_NoDemoNoTests.zip <http://horace.isis.rl.ac.uk/kits/small_downloads/Horace&Herbert_NoDemoNoTests.zip>`__ distribution file from `small downloads <http://horace.isis.rl.ac.uk/kits/small_downloads>`__, which is an order of magnitude slmaller to download.
 
@@ -36,11 +36,11 @@ In the download area (see below) you can now get a zipped distribution of Horace
 Full Download
 *************
 
-Horace uses low level functions, which can be found in `Herbert <Herbert>`__ package. (e.g. some of the fitting algorithms), so you need Herbert available before installing and using Horace.
+Horace uses low level functions, which can be found in `Herbert <Herbert.rst>`__ package. (e.g. some of the fitting algorithms), so you need Herbert available before installing and using Horace.
 
 - `Horace-announce <http://lists.isis.rl.ac.uk/mailman/listinfo/horace-announce/>`__
 - `Download page <http://horace.isis.rl.ac.uk/kits/>`__
-- `Herbert <Herbert>`__
+- `Herbert <Herbert.rst>`__
 
 
 Standard Installation

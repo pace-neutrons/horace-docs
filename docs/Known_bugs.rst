@@ -39,6 +39,6 @@ Fatal Read Error
 
 Similarly, this sometimes occurs during the writing of data into the SQW file. There are a variety of causes, some understood and some not.
 
-1. One or more of the TMP files has been corrupted. In this case there is little you can do other than to redo the ``gen_sqw`` command. If only one TMP file is corrupted then you may wish to consider re-writing the SQW file without that dataset. To do this use the ``write_nsqw_to_sqw`` command, described `here <List_of_functions#write_nsqw_to_sqw>`__.
+1. One or more of the TMP files has been corrupted. In this case there is little you can do other than to redo the ``gen_sqw`` command. If only one TMP file is corrupted then you may wish to consider re-writing the SQW file without that dataset. To do this use the ``write_nsqw_to_sqw`` command, described `here <List_of_functions.rst#write_nsqw_to_sqw>`__.
 
 2. We have found that if you combine SPE files using, for example, ``add_spe`` in Mslice then you can get an inconsistency in the TMP files. We have not yet tracked down the cause of this problem, so at present the solution we propose is **DO NOT** combine SPE files and then make an SQW file out of them. Rather keep the files separate and assign the same values of Ei and psi to them, as Horace will combine the data and recalculate the errorbars internally.

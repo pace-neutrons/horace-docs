@@ -6,7 +6,7 @@ Support and updates
 Support
 =======
 
-If you are having problems then your first port of call should be this wiki -- we have listed and described every function that is included in the Horace package. See `here <List_of_functions>`__ for details.
+If you are having problems then your first port of call should be this wiki -- we have listed and described every function that is included in the Horace package. See `here <List_of_functions.rst>`__ for details.
 
 In addition the Matlab function files each have detailed notes describing how the function works and what it does. To see these notes type
 

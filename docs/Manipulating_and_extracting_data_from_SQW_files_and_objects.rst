@@ -18,7 +18,7 @@ There are various different forms of input for this function, the purpose of whi
 
 This defines the coordinate system you will use to view the data.
 
-``proj`` is a Matlab structure array containing information about the axes you wish to use to view the data. Because each point in the SQW file is labelled with h, k, and l (the reciprocal lattice vectors), and energy, it is possible, if you wish, to redefine the co-ordinate system with one of your choosing. For example you may wish to view the data in terms of (h,h,0)/(h,-h,0)/(0,0,l). This is distinct from the vectors ``u`` and ``v`` that are specified in `gen_sqw <List_of_functions#gen_sqw>`__, which describe how the crystal is oriented with respect to the spectrometer and are determined by the physical orientation of your sample.
+``proj`` is a Matlab structure array containing information about the axes you wish to use to view the data. Because each point in the SQW file is labelled with h, k, and l (the reciprocal lattice vectors), and energy, it is possible, if you wish, to redefine the co-ordinate system with one of your choosing. For example you may wish to view the data in terms of (h,h,0)/(h,-h,0)/(0,0,l). This is distinct from the vectors ``u`` and ``v`` that are specified in `gen_sqw <List_of_functions.rst#gen_sqw>`__, which describe how the crystal is oriented with respect to the spectrometer and are determined by the physical orientation of your sample.
 
 **Orthogonal axes case**
 

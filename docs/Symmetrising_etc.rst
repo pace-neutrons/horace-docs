@@ -47,7 +47,7 @@ or, more generally:
        u, v, psi, omega, dpsi, gl, gs,'transform_sqw',@(x)(user_symmetrisation_routine(x))
 
 
-where *spefile, par_file, etc...* are the options used during initial *sqw* file generation (see `Generating SQW files <Generating_SQW_files>`__). The first ``gen_sqw`` would build a *sqw* file reflected as in the example for the reflection in memory, but with the transformation applied to the entire dataset. In the second, more general, case the user defined function (in a m-file on the Matlab path) can define multiple symmetrisation operations that are applied sequentially to the entire data. An example is as follows, which folds a cubic system so that all eight of the symmetrically equivalent (1,0,0) type positions are folded on to each other:
+where *spefile, par_file, etc...* are the options used during initial *sqw* file generation (see `Generating SQW files <Generating_SQW_files.rst>`__). The first ``gen_sqw`` would build a *sqw* file reflected as in the example for the reflection in memory, but with the transformation applied to the entire dataset. In the second, more general, case the user defined function (in a m-file on the Matlab path) can define multiple symmetrisation operations that are applied sequentially to the entire data. An example is as follows, which folds a cubic system so that all eight of the symmetrically equivalent (1,0,0) type positions are folded on to each other:
 
 ::
 
@@ -177,7 +177,7 @@ Commands for entire datasets
 ============================
 
 
-**For application of symmetry operations to the entire sqw file when it is being generated, see** `above <Symmetrising_etc#Symmetrising_whole_data_files>`__
+**For application of symmetry operations to the entire sqw file when it is being generated, see** `above <Symmetrising_etc.rst#Symmetrising_whole_data_files>`__
 
 It is possible to make a new .sqw data file that has had a specified symmetrisation performed on it for a certain data range. You specify which Brillouin zone you are interested in, and then tell Horace which Brillouin zones are symmetrically equivalent to this one. Data are then cut from all of these zones and combined with the data from your original choice. The result is output to a new file. For example:
 

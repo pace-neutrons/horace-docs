@@ -2,7 +2,7 @@
 Input file formats
 ##################
 
-To generate the SQW file from which Horace reads S(**Q**,w), neutron scattering data for each individual run and needs to be provided in one of two formats: the legacy ASCII format SPE file, together with an ASCII detector parameter file (the PAR file), or their replacements the HDF5 (Hierarchical Data Format) NXSPE file. Two functions are available as part of Horace to create SQW files from these input files, namely ``gen_sqw`` (creates a new SQW file) and ``accumulate_sqw`` (accumulates data to an existing SQW file). The functions to generate SQW files are described in detail `here <Generating_SQW_files>`__.
+To generate the SQW file from which Horace reads S(**Q**,w), neutron scattering data for each individual run and needs to be provided in one of two formats: the legacy ASCII format SPE file, together with an ASCII detector parameter file (the PAR file), or their replacements the HDF5 (Hierarchical Data Format) NXSPE file. Two functions are available as part of Horace to create SQW files from these input files, namely ``gen_sqw`` (creates a new SQW file) and ``accumulate_sqw`` (accumulates data to an existing SQW file). The functions to generate SQW files are described in detail `here <Generating_SQW_files.rst>`__.
 
 Generally, the input data files (SPE or NXSPE format) will be created by the data reduction code for the instrument which you are using if Horace has been made available for that instrument by the scientist(s) responsible. However, if you want to use Horace to analyse data from other instruments you need to know how to create the input files from whatever format your data is saved in.
 

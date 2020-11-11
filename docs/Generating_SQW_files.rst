@@ -10,7 +10,7 @@ This page tells you how to generate an SQW file. There are two different situati
 
 The two functions have almost identical syntax, as is explained in the sections below.
 
-To generate the SQW file neutron data for each individual run needs to be provided in one of two formats: the legacy ASCII format SPE file, together with an ASCII detector parameter file (the PAR file), or their replacements the HDF (hierarchical Data Format) NXSPE file. More details about these files and how to create them can be found `here <Input_file_formats>`__
+To generate the SQW file neutron data for each individual run needs to be provided in one of two formats: the legacy ASCII format SPE file, together with an ASCII detector parameter file (the PAR file), or their replacements the HDF (hierarchical Data Format) NXSPE file. More details about these files and how to create them can be found `here <Input_file_formats.rst>`__
 
 
 accumulate_sqw
@@ -94,7 +94,7 @@ The optional input arguments are as follows:
 gen_sqw
 =======
 
-This is the main function you will use to turn the data accumulated in multiple SPE files into a single SQW file that will be used by the rest of the Horace functions. An introduction to its use is given in the `getting started <Getting_started#Creating_an_SQW_file>`__ section. The syntax is the same as for ``accumulate_sqw``; the only difference is that you give a list of existing input datasets rather than the anticipated list.
+This is the main function you will use to turn the data accumulated in multiple SPE files into a single SQW file that will be used by the rest of the Horace functions. An introduction to its use is given in the `getting started <Getting_started.rst#Creating_an_SQW_file>`__ section. The syntax is the same as for ``accumulate_sqw``; the only difference is that you give a list of existing input datasets rather than the anticipated list.
 
 The essential inputs take the following form:
 
