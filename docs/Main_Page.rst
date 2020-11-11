@@ -6,71 +6,71 @@ Main Page
 Horace: visualising and manipulating S(**Q**,w) measured in all four dimensions
 ===============================================================================
 
-Horace is a suite of programs for the visualisation and analysis of large datasets from time-of-flight neutron inelastic scattering spectrometers. The theory behind, and application of, Horace has been published in Nuclear Instruments and Methods in Physics Research. It is freely available online `here <http://www.sciencedirect.com/science/article/pii/S016890021630777X>`__, from where you can also download a pdf copy under the `Creative Commons Attribution License <https://creativecommons.org/licenses/by/4.0/>`__. Please cite this paper if you have used Horace in your research. More details about citing Horace can be found `here <How_to_cite_Horace.rst>`__.
+Horace is a suite of programs for the visualisation and analysis of large datasets from time-of-flight neutron inelastic scattering spectrometers. The theory behind, and application of, Horace has been published in Nuclear Instruments and Methods in Physics Research. It is freely available online `here <http://www.sciencedirect.com/science/article/pii/S016890021630777X>`__, from where you can also download a pdf copy under the `Creative Commons Attribution License <https://creativecommons.org/licenses/by/4.0/>:ref:`__. Please cite this paper if you have used Horace in your research. More details about citing Horace can be found `here <How_to_cite_Horace:How to cite Horace>`.
 
 Download, support & updates
 ===========================
 
-- `Download and setup <Download_and_setup.rst>`__
+- :ref:`Download and setup <Download_and_setup:Download and setup>`
 
-- `Support and updates <Support_and_updates.rst>`__
+- :ref:`Support and updates <Support_and_updates:Support and updates>`
 
 
 How to use Horace
 =================
 
-- `Getting started: An introduction to the use of Horace with the Matlab command line <Getting_started.rst>`__
+- :ref:`Getting started: An introduction to the use of Horace with the Matlab command line <Getting_started:Getting started>`
 
-- `Advanced use of Horace with the Matlab command line <Advanced_use.rst>`__
+- :ref:`Advanced use of Horace with the Matlab command line <Advanced_use:Advanced use>`
 
-- `Horace Graphical User Interface <Horace_GUI.rst>`__
+- :ref:`Horace Graphical User Interface <Horace_GUI:Horace GUI>`
 
 
 Horace Manual
 =============
 
 - Horace Manual chapters
-   - `Changing Horace settings <Changing_Horace_settings.rst>`__
-   - `Planning a Horace scan <Planning_a_Horace_scan.rst>`__
-   - `Generating SQW files <Generating_SQW_files.rst>`__
-   - `Taking cuts from data; saving, loading and querying cuts on disk <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst>`__
-   - `Correcting for sample misalignment <Correcting_for_sample_misalignment.rst>`__
-   - `Data diagnostics <Data_diagnostics.rst>`__
-   - `Symmetrising etc <Symmetrising_etc.rst>`__
-   - `Add, subtract, etc <Binary_operations.rst>`__
-   - `Plotting <Plotting.rst>`__
-   - `Simulation <Simulation.rst>`__
-   - `Fitting data <Multifit.rst>`__
-   - `Fitting with resolution function convolution <Tobyfit.rst>`__
+   - :ref:`Changing Horace settings <Changing_Horace_settings:Changing Horace settings>`
+   - :ref:`Planning a Horace scan <Planning_a_Horace_scan:Planning a Horace scan>`
+   - :ref:`Generating SQW files <Generating_SQW_files:Generating SQW files>`
+   - :ref:`Taking cuts from data; saving, loading and querying cuts on disk <Manipulating_and_extracting_data_from_SQW_files_and_objects:Manipulating and extracting data from SQW files and objects>`
+   - :ref:`Correcting for sample misalignment <Correcting_for_sample_misalignment:Correcting for sample misalignment>`
+   - :ref:`Data diagnostics <Data_diagnostics:Data diagnostics>`
+   - :ref:`Symmetrising etc <Symmetrising_etc:Symmetrising etc>`
+   - :ref:`Add, subtract, etc <Binary_operations:Binary operations>`
+   - :ref:`Plotting <Plotting:Plotting>`
+   - :ref:`Simulation <Simulation:Simulation>`
+   - :ref:`Fitting data <Multifit:Multifit>`
+   - :ref:`Fitting with resolution function convolution <Tobyfit:Tobyfit>`
 
 
-- `Complete list of functions <List_of_functions.rst>`__
+- :ref:`Complete list of functions <List_of_functions:List of functions>`
 
-- `Input file formats and creating input files <Input_file_formats.rst>`__
+- :ref:`Input file formats and creating input files <Input_file_formats:Input file formats>`
 
-- `FAQs <FAQ.rst>`__
+- :ref:`FAQs <FAQ:FAQ>`
 
 
 Example scripts
 ===============
 
-- `Example scripts <Example_scripts.rst>`__
+- :ref:`Example scripts <Example_scripts:Example scripts>`
 
 
 Citing Horace
 =============
 
-- `How to cite Horace <How_to_cite_Horace.rst>`__
+- :ref:`How to cite Horace <How_to_cite_Horace:How to cite Horace>`
 
-- `Papers citing Horace <Papers_citing_Horace.rst>`__
+- :ref:`Papers citing Horace <Papers_citing_Horace:Papers citing Horace>`
 
 For Developers
 ==============
 
-- `Known bugs <Known_bugs.rst>`__
+- :ref:`Known bugs <Known_bugs:Known bugs>`
 
-- `Become a developer <Become_a_developer.rst>`__
+- :ref:`Become a developer <Become_a_developer:Become a developer>`
 
-- `MediaWiki information <For_Developers.rst>`__
+- :ref:`MediaWiki information <For_Developers:For Developers>`
 
-- `Developer information <Developer_info.rst>`__
+- :ref:`Developer information <Developer_info:Developer info>`

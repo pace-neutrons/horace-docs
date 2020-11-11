@@ -2,9 +2,9 @@
 Data diagnostics
 ################
 
-Horace contains various tools for diagnosing issues with the data. The foremost of these is the `run_inspector <run_inspector.rst>`__ tool.
+Horace contains various tools for diagnosing issues with the data. The foremost of these is the :ref:`run_inspector <run_inspector:run inspector>` tool.
 
-If you wish to decompose an sqw object into the data from its constituent runs, the `split <Data_diagnostics.rst#split>`__ routine outlined below can be used. After manipulation (if necessary), such data can then be recombined using the `join <Data_diagnostics.rst#join>`__ routine.
+If you wish to decompose an sqw object into the data from its constituent runs, the :ref:`split <Data_diagnostics:split>` routine outlined below can be used. After manipulation (if necessary), such data can then be recombined using the :ref:`join <Data_diagnostics:join>` routine.
 
 run_inspector
 -------------

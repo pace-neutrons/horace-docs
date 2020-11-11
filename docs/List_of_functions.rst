@@ -4,121 +4,121 @@ List of functions
 
 Listed here are all the functions and commands that can be used in Horace. Each function is listed with a **brief** description of what it does, and an example syntax for its use.
 
-`Generating SQW files <Generating_SQW_files.rst>`__
+:ref:`Generating SQW files <Generating_SQW_files:Generating SQW files>`
 
-- `accumulate_sqw <Generating_SQW_files.rst#accumulate_sqw>`__
-- `gen_sqw <Generating_SQW_files.rst#gen_sqw>`__
-
-
-`Correcting for sample misalignment <Correcting_for_sample_misalignment.rst>`__
-
-- `bragg_positions <Correcting_for_sample_misalignment.rst#bragg_positions>`__
-- `bragg_positions_view <Correcting_for_sample_misalignment.rst#bragg_positions_view>`__
-- `calc_proj_matrix <Correcting_for_sample_misalignment.rst#calc_proj_matrix>`__
-- `crystal_pars_correct <Correcting_for_sample_misalignment.rst#crystal_pars_correct>`__
-- `refine_crystal <Correcting_for_sample_misalignment.rst#refine_crystal>`__
-- `rlu_corr_to_lattice <Correcting_for_sample_misalignment.rst#rlu_corr_to_lattice>`__
-- `ubmatrix <Correcting_for_sample_misalignment.rst#ubmatrix>`__
-- `uv_correct <Correcting_for_sample_misalignment.rst#uv_correct>`__
+- :ref:`accumulate_sqw <Generating_SQW_files:accumulate_sqw>`
+- :ref:`gen_sqw <Generating_SQW_files:gen_sqw>`
 
 
-`Data diagnostics <Data_diagnostics.rst>`__
+:ref:`Correcting for sample misalignment <Correcting_for_sample_misalignment:Correcting for sample misalignment>`
 
-- `run_inspector <run_inspector.rst>`__
-
-
-`Plotting <Plotting.rst>`__
-
-- `1-dimensional plot commands <Plotting.rst#pd>`__
-- `2-dimensional plot commands <Plotting.rst#da>`__
-- `3-dimensional plot commands <Plotting.rst#sliceomatic>`__
-- `Adjusting figures <Plotting.rst#Color>`__
-- `Spaghetti plot <Plotting.rst#spaghetti_plot>`__
+- :ref:`bragg_positions <Correcting_for_sample_misalignment:bragg_positions>`
+- :ref:`bragg_positions_view <Correcting_for_sample_misalignment:bragg_positions_view>`
+- :ref:`calc_proj_matrix <Correcting_for_sample_misalignment:calc_proj_matrix>`
+- :ref:`crystal_pars_correct <Correcting_for_sample_misalignment:crystal_pars_correct>`
+- :ref:`refine_crystal <Correcting_for_sample_misalignment:refine_crystal>`
+- :ref:`rlu_corr_to_lattice <Correcting_for_sample_misalignment:rlu_corr_to_lattice>`
+- :ref:`ubmatrix <Correcting_for_sample_misalignment:ubmatrix>`
+- :ref:`uv_correct <Correcting_for_sample_misalignment:uv_correct>`
 
 
-`Manipulating and extracting data from SQW files and objects <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst>`__
+:ref:`Data diagnostics <Data_diagnostics:Data diagnostics>`
 
-- `cut_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst#cut_sqw>`__
-- `head_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst#head>`__
-- `read <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst#read_sqw>`__
-- `save <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst#save>`__
-- `save xye ascii file <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst#save>`__
-- `extract coordinates <Manipulating_and_extracting_data_from_SQW_files_and_objects.rst#hkle>`__
+- :ref:`run_inspector <run_inspector:run inspector>`
 
 
-`Symmetrising etc <Symmetrising_etc.rst>`__
+:ref:`Plotting <Plotting:Plotting>`
 
-- `Symmetrise <Symmetrising_etc.rst#symmetrise_sqw>`__
-- `Combine <Symmetrising_etc.rst#combine_sqw>`__
-- `Rebin <Symmetrising_etc.rst#rebin_sqw>`__
-
-
-`Simulation <Simulation.rst>`__
-
-- `func_eval <Simulation.rst>`__
-- `sqw_eval <Simulation.rst>`__
-- `disp2sqw_eval <Simulation.rst>`__
-- `dispersion_plot <Simulation.rst>`__
-- `disp2sqw_plot <Simulation.rst>`__
+- :ref:`1-dimensional plot commands <Plotting:pd>`
+- :ref:`2-dimensional plot commands <Plotting:da>`
+- :ref:`3-dimensional plot commands <Plotting:sliceomatic>`
+- :ref:`Adjusting figures <Plotting:Color>`
+- :ref:`Spaghetti plot <Plotting:spaghetti_plot>`
 
 
-`Fitting data <Multifit.rst>`__
+:ref:`Manipulating and extracting data from SQW files and objects <Manipulating_and_extracting_data_from_SQW_files_and_objects:Manipulating and extracting data from SQW files and objects>`
 
-- `multifit <Multifit.rst#multifit>`__
-- `multifit_func <Multifit.rst#multifit_func>`__
-- `multifit_sqw <Multifit.rst#multifit_sqw>`__
-- `multifit_sqw_sqw <Multifit.rst#multifit_sqw_sqw>`__
-
-
-
-`Binary operations <Binary_operations.rst>`__
-
-- `minus <Binary_operations.rst#List_of_operations_and_their_equivalent_code>`__
-- `plus <Binary_operations.rst#List_of_operations_and_their_equivalent_code>`__
-- `mtimes <Binary_operations.rst#List_of_operations_and_their_equivalent_code>`__
-- `mrdivide <Binary_operations.rst#List_of_operations_and_their_equivalent_code>`__
-- `mldivide <Binary_operations.rst#List_of_operations_and_their_equivalent_code>`__
-- `mpower <Binary_operations.rst#List_of_operations_and_their_equivalent_code>`__
+- :ref:`cut_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects:cut_sqw>`
+- :ref:`head_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects:head>`
+- :ref:`read <Manipulating_and_extracting_data_from_SQW_files_and_objects:read_sqw>`
+- :ref:`save <Manipulating_and_extracting_data_from_SQW_files_and_objects:save>`
+- :ref:`save xye ascii file <Manipulating_and_extracting_data_from_SQW_files_and_objects:save>`
+- :ref:`extract coordinates <Manipulating_and_extracting_data_from_SQW_files_and_objects:hkle>`
 
 
-`Unary operations <Unary_operations.rst>`__
+:ref:`Symmetrising etc <Symmetrising_etc:Symmetrising etc>`
 
-- `uplus <Unary_operations.rst#uplus>`__
-- `uminus <Unary_operations.rst#uminus>`__
-- `Trigonometric and hyperbolic functions <Unary_operations.rst#Trigonometric_and_hyperbolic_functions>`__
-- `Other mathematical functions <Unary_operations.rst#Other_mathematical_functions>`__
-
-
-`Reshaping etc <Reshaping_etc.rst>`__
-
-- `replicate <Reshaping_etc.rst#replicate>`__
-- `compact <Reshaping_etc.rst#compact>`__
-- `permute <Reshaping_etc.rst#permute>`__
-- `cut <Reshaping_etc.rst#cut>`__
-- `smooth <Reshaping_etc.rst#smooth>`__
-- `mask <Reshaping_etc.rst#mask>`__
-- `mask_points <Reshaping_etc.rst#mask_points>`__
-- `mask_runs <Reshaping_etc.rst#mask_runs>`__
-- `section <Reshaping_etc.rst#section>`__
+- :ref:`Symmetrise <Symmetrising_etc:symmetrise_sqw>`
+- :ref:`Combine <Symmetrising_etc:combine_sqw>`
+- :ref:`Rebin <Symmetrising_etc:rebin_sqw>`
 
 
-`Read or write to disk <Read_or_write_to_disk.rst>`__
+:ref:`Simulation <Simulation:Simulation>`
 
-- `read <Read_or_write_to_disk.rst#read>`__
-- `save <Read_or_write_to_disk.rst#save>`__
-- `save xye ascii file <Read_or_write_to_disk.rst#save_xye>`__
-- `header <Read_or_write_to_disk.rst#header>`__
-- `display <Read_or_write_to_disk.rst#display>`__
+- :ref:`func_eval <Simulation:Simulation>`
+- :ref:`sqw_eval <Simulation:Simulation>`
+- :ref:`disp2sqw_eval <Simulation:Simulation>`
+- :ref:`dispersion_plot <Simulation:Simulation>`
+- :ref:`disp2sqw_plot <Simulation:Simulation>`
 
 
-`Changing object type <Changing_object_type.rst>`__
+:ref:`Fitting data <Multifit:Multifit>`
 
-- `d0d <Changing_object_type.rst#d0d>`__
-- `d1d <Changing_object_type.rst#d1d>`__
-- `d2d <Changing_object_type.rst#d2d>`__
-- `d3d <Changing_object_type.rst#d3d>`__
-- `d4d <Changing_object_type.rst#d4d>`__
-- `sqw <Changing_object_type.rst#sqw>`__
-- `IX_dataset_1d <Changing_object_type.rst#IX_dataset_1d>`__
-- `IX_dataset_2d <Changing_object_type.rst#IX_dataset_2d>`__
-- `IX_dataset_3d <Changing_object_type.rst#IX_dataset_3d>`__
+- :ref:`multifit <Multifit:multifit>`
+- :ref:`multifit_func <Multifit:multifit_func>`
+- :ref:`multifit_sqw <Multifit:multifit_sqw>`
+- :ref:`multifit_sqw_sqw <Multifit:multifit_sqw_sqw>`
+
+
+
+:ref:`Binary operations <Binary_operations:Binary operations>`
+
+- :ref:`minus <Binary_operations:List_of_operations_and_their_equivalent_code>`
+- :ref:`plus <Binary_operations:List_of_operations_and_their_equivalent_code>`
+- :ref:`mtimes <Binary_operations:List_of_operations_and_their_equivalent_code>`
+- :ref:`mrdivide <Binary_operations:List_of_operations_and_their_equivalent_code>`
+- :ref:`mldivide <Binary_operations:List_of_operations_and_their_equivalent_code>`
+- :ref:`mpower <Binary_operations:List_of_operations_and_their_equivalent_code>`
+
+
+:ref:`Unary operations <Unary_operations:Unary operations>`
+
+- :ref:`uplus <Unary_operations:uplus>`
+- :ref:`uminus <Unary_operations:uminus>`
+- :ref:`Trigonometric and hyperbolic functions <Unary_operations:Trigonometric_and_hyperbolic_functions>`
+- :ref:`Other mathematical functions <Unary_operations:Other_mathematical_functions>`
+
+
+:ref:`Reshaping etc <Reshaping_etc:Reshaping etc>`
+
+- :ref:`replicate <Reshaping_etc:replicate>`
+- :ref:`compact <Reshaping_etc:compact>`
+- :ref:`permute <Reshaping_etc:permute>`
+- :ref:`cut <Reshaping_etc:cut>`
+- :ref:`smooth <Reshaping_etc:smooth>`
+- :ref:`mask <Reshaping_etc:mask>`
+- :ref:`mask_points <Reshaping_etc:mask_points>`
+- :ref:`mask_runs <Reshaping_etc:mask_runs>`
+- :ref:`section <Reshaping_etc:section>`
+
+
+:ref:`Read or write to disk <Read_or_write_to_disk:Read or write to disk>`
+
+- :ref:`read <Read_or_write_to_disk:read>`
+- :ref:`save <Read_or_write_to_disk:save>`
+- :ref:`save xye ascii file <Read_or_write_to_disk:save_xye>`
+- :ref:`header <Read_or_write_to_disk:header>`
+- :ref:`display <Read_or_write_to_disk:display>`
+
+
+:ref:`Changing object type <Changing_object_type:Changing object type>`
+
+- :ref:`d0d <Changing_object_type:d0d>`
+- :ref:`d1d <Changing_object_type:d1d>`
+- :ref:`d2d <Changing_object_type:d2d>`
+- :ref:`d3d <Changing_object_type:d3d>`
+- :ref:`d4d <Changing_object_type:d4d>`
+- :ref:`sqw <Changing_object_type:sqw>`
+- :ref:`IX_dataset_1d <Changing_object_type:IX_dataset_1d>`
+- :ref:`IX_dataset_2d <Changing_object_type:IX_dataset_2d>`
+- :ref:`IX_dataset_3d <Changing_object_type:IX_dataset_3d>`

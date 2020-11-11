@@ -2,7 +2,7 @@
 Advanced use
 ############
 
-The following details more comprehensively the functions in the Horace suite. In the `Getting started <Getting_started.rst>`__ section a brief tutorial was provided on the use of the essential Horace functions. In addition there is also a `list of functions <list_of_functions.rst>`__, which details the syntax for every function.
+The following details more comprehensively the functions in the Horace suite. In the :ref:`Getting started <Getting_started:Getting started>` section a brief tutorial was provided on the use of the essential Horace functions. In addition there is also a :ref:`list of functions <list_of_functions:list of functions>`, which details the syntax for every function.
 
 Preamble
 ========
@@ -238,14 +238,14 @@ Horace allows you to perform simple binary arithmetic operations on dnd and sqw 
 - You must be careful to notice that it is possible perform the operation on two objects that do not cover the same area in (**Q**,E)-space. This is fine if, for example, you wish to subtract the scattering around one value of **Q** from that around another. However it is in general advisable to be careful since you can end up adding/subtracting/etc spectra from completely different parts of reciprocal space that you maybe didn't want to...
 
 
-A complete list of binary arithmetic operations can be found `here <Binary_operations.rst>`__
+A complete list of binary arithmetic operations can be found :ref:`here <Binary_operations:Binary operations>`
 
 Unary operations
 ================
 
 One can also use Horace to perform unary mathematical operations, i.e. operations that act on a single object. An example would be ``cos``, which takes the cosine of the intensity at every point in a dnd/sqw object.
 
-A full list of unary operations can be found `here <Unary_operations.rst>`__.
+A full list of unary operations can be found :ref:`here <Unary_operations:Unary operations>`.
 
 
 Obtaining information about objects
@@ -366,7 +366,7 @@ The command for default plotting is
 
 which will produce an appropriate plot based on the dimensions of the object ``obj`` (i.e. a marker and line plot for 1-d, a colourmap for 2-d, and a sliceomatic colourmap for 3-d). Zero dimensional and 4-dimensional objects cannot be plotted, of course.
 
-There are several different ways of plotting two- and one-dimensional data (e.g. with/without errorbars for 1d, etc.). One-dimensional data can be plotted using ``dd, de, dh, dl, dm, dp, mp, pd, pe, peoc, ph, phoc, pl, ploc, pm, pmoc, pp`` and ``sp``, whereas two-dimensional data can be plotted using ``da, ds, mp`` and ``sp``, in addition to ``plot``. The differences between all of these plot commands is given in detail in the `plot functions <List_of_functions.rst#Plotting>`__ section of this manual. For three-dimensional data only the ``plot`` command exists, since Horace has only one way of plotting 3-d data.
+There are several different ways of plotting two- and one-dimensional data (e.g. with/without errorbars for 1d, etc.). One-dimensional data can be plotted using :ref:``dd, de, dh, dl, dm, dp, mp, pd, pe, peoc, ph, phoc, pl, ploc, pm, pmoc, pp`` and ``sp``, whereas two-dimensional data can be plotted using ``da, ds, mp`` and ``sp``, in addition to ``plot``. The differences between all of these plot commands is given in detail in the `plot functions <List_of_functions:Plotting>` section of this manual. For three-dimensional data only the ``plot`` command exists, since Horace has only one way of plotting 3-d data.
 Once a plot has been made there are various commands that can be used to alter its appearance (e.g. the axes, labels, etc.).
 
 To alter the limits along the x, y, or z axes you use the commands ``lx, ly`` and ``lz``, e.g.
@@ -386,7 +386,7 @@ Fitting
 
 You can also use Horace to fit your data. It can take quite a long time for the fit to converge, so it is therefore a good idea to provide a good initial guess of the fit parameters. You can work these out simulating and then comparing the result to the data by eye.
 
-For an introduction and overview of how to use the following fitting functions, please read `Fitting data <Multifit.rst>`__. For comprehensive help, please use the Matlab documentation for the various fitting functions that can be obtained by using the ``doc`` command, for example ``doc d1d/multifit`` (for fitting function like Gaussians to d1d objects) or ``doc sqw/multifit_sqw`` (fitting models for S(Q,w) to sqw objects).
+For an introduction and overview of how to use the following fitting functions, please read :ref:`Fitting data <Multifit:Multifit>`. For comprehensive help, please use the Matlab documentation for the various fitting functions that can be obtained by using the ``doc`` command, for example ``doc d1d/multifit`` (for fitting function like Gaussians to d1d objects) or ``doc sqw/multifit_sqw`` (fitting models for S(Q,w) to sqw objects).
 
 
 Simulating
@@ -403,7 +403,7 @@ In both cases in the above example ``win`` can be an sqw or dnd dataset, that is
 The essential difference comes for the function used to simulate the data. For ``func_eval`` the format is the same as for ``multifit``, specifically the first few input arguments of the function are arrays, all of which have the same number of elements as there are data points. For a 2-dimensional object there would be two such arrays, for a 3-dimensional one there would be three, and so on. Furthermore the arrays are just the axes of the input object, i.e. ``win.data.p{1}, win.data.p{2},...``.
 The arrays input to the ``sqw_eval`` function are different, because there must always be 4 arrays before the input parameters are given. The 4 arrays correspond to the values of the Miller indices h, k, and l; plus energy. The 4 arrays are always supplied, even if the dimensionality of the object to be simulated is lower than 4 -- in this case the values of all of the elements for one or more of the arrays will all be the same. This means that the same function can be used to simulate datasets of different dimensionality with the same model, without having to re-write the function each time. It is also useful if you have a model, such as a spin-wave model, where the calculation is easier if the co-ordinate system is (H,0,0) / (0,K,0) / (0,0,L).
 
-Further information concerning simulations can be found in the `Simulations <List_of_functions.rst#Fitting>`__ section of the list of functions.
+Further information concerning simulations can be found in the :ref:`Simulations <List_of_functions:Fitting>` section of the list of functions.
 
 SQW generation and manipulation
 ===============================
@@ -416,7 +416,7 @@ When converting a series of SPE files into a single SQW file there are only a fe
 						 u, v, psi, omega, dpsi, gl, gs, grid_size_in, urange_in);
 
 
-This is the full syntax for the ``gen_sqw`` command. At its most basic it can be used without output arguments, and without the input arguments ``grid_size_in`` and ``urange_in``. The other input arguments take the form given `here <Generating_SQW_files.rst>`__.
+This is the full syntax for the :ref:``gen_sqw`` command. At its most basic it can be used without output arguments, and without the input arguments ``grid_size_in`` and ``urange_in``. The other input arguments take the form given `here <Generating_SQW_files:Generating SQW files>`.
 There are two additional circumstances in which you would not wish to use ``gen_sqw``. The first is if, for some reason, the ``gen_sqw`` command has failed (usually due to low-level problems between Matlab and your computer's operating system), and the second is if you wish to view data ''on the fly'' whilst the experiment is still running. In both circumstances a time saving is involved because you do not have to rewrite all of the intermediate TMP files.
 If ``gen_sqw`` has failed after creating all of the necessary TMP files (i.e. one TMP file for every SPE file) then the command to use is
 

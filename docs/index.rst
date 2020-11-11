@@ -22,6 +22,7 @@
    Correcting_for_sample_misalignment
    Data_diagnostics
    Symmetrising_etc
+   Unary_operations
    Binary_operations
    Plotting
    Simulation
