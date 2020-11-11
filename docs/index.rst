@@ -8,6 +8,8 @@
 .. toctree::
    :hidden:
 
+   The_Horace_Rationale
+
    Download_and_setup
    Support_and_updates
 
@@ -41,6 +43,32 @@
    Become_a_developer
    For_Developers
    Developer_info
+
+   General_disclaimer
+   Privacy_policy
+
+   \ <Changing_object_type>
+   \ <Developer_information>
+   \ <Fitting>
+   \ <Herbert>
+   \ <Horace_and_Libisis_installation>
+   \ <Horace_command_line>
+   \ <New>
+   \ <Official_download_v1>
+   \ <Read_or_write_to_disk>
+   \ <Remote_data_analysis>
+   \ <Reshaping_etc>
+   \ <Run_inspector>
+   \ <Script_for_correcting_sample_misalignment>
+   \ <Script_for_data_treatment>
+   \ <Script_for_fitting>
+   \ <Script_for_generating_sqw_files>
+   \ <Script_for_making_cuts_and_plotting>
+   \ <Script_for_making_publication_quality_figures>
+   \ <Script_for_making_simulations>
+   \ <Script_for_planning_an_experiment>
+   \ <s_new>
+
 
 Horace: visualising and manipulating S(**Q**,w) measured in all four dimensions
 ===============================================================================

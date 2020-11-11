@@ -25,7 +25,7 @@ This is a set of basic configurations for Horace. In order to find out the curre
 		  delete_tmp: 1
 	   working_directory: 'C:\\tmp'
 	force_mex_if_use_mex: 0
-       high_perf_config_info: [1×1 hpc_config]
+       high_perf_config_info: [11 hpc_config]
 		  class_name: 'hor_config'
 		    saveable: 1
 	    returns_defaults: 0

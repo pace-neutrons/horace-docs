@@ -29,17 +29,17 @@ Listed here are all the functions and commands that can be used in Horace. Each 
 
 :ref:`Plotting <Plotting:Plotting>`
 
-- :ref:`1-dimensional plot commands <Plotting:pd>`
-- :ref:`2-dimensional plot commands <Plotting:da>`
+- :ref:`1-dimensional plot commands <Plotting:pd (plot data)>`
+- :ref:`2-dimensional plot commands <Plotting:da (draw area)>`
 - :ref:`3-dimensional plot commands <Plotting:sliceomatic>`
-- :ref:`Adjusting figures <Plotting:Color>`
+- :ref:`Adjusting figures <Plotting:Colour of lines and markers>`
 - :ref:`Spaghetti plot <Plotting:spaghetti_plot>`
 
 
 :ref:`Manipulating and extracting data from SQW files and objects <Manipulating_and_extracting_data_from_SQW_files_and_objects:Manipulating and extracting data from SQW files and objects>`
 
 - :ref:`cut_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects:cut_sqw>`
-- :ref:`head_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects:head>`
+- :ref:`head_sqw <Manipulating_and_extracting_data_from_SQW_files_and_objects:head_horace>`
 - :ref:`read <Manipulating_and_extracting_data_from_SQW_files_and_objects:read_sqw>`
 - :ref:`save <Manipulating_and_extracting_data_from_SQW_files_and_objects:save>`
 - :ref:`save xye ascii file <Manipulating_and_extracting_data_from_SQW_files_and_objects:save>`
@@ -48,9 +48,9 @@ Listed here are all the functions and commands that can be used in Horace. Each 
 
 :ref:`Symmetrising etc <Symmetrising_etc:Symmetrising etc>`
 
-- :ref:`Symmetrise <Symmetrising_etc:symmetrise_sqw>`
-- :ref:`Combine <Symmetrising_etc:combine_sqw>`
-- :ref:`Rebin <Symmetrising_etc:rebin_sqw>`
+- :ref:`Symmetrise <Symmetrising_etc_symmetrise_sqw>`
+- :ref:`Combine <Symmetrising_etc_combine_sqw>`
+- :ref:`Rebin <Symmetrising_etc_rebin_sqw>`
 
 
 :ref:`Simulation <Simulation:Simulation>`
@@ -61,6 +61,7 @@ Listed here are all the functions and commands that can be used in Horace. Each 
 - :ref:`dispersion_plot <Simulation:Simulation>`
 - :ref:`disp2sqw_plot <Simulation:Simulation>`
 
+.. _LoF_Fitting:
 
 :ref:`Fitting data <Multifit:Multifit>`
 
@@ -73,20 +74,20 @@ Listed here are all the functions and commands that can be used in Horace. Each 
 
 :ref:`Binary operations <Binary_operations:Binary operations>`
 
-- :ref:`minus <Binary_operations:List_of_operations_and_their_equivalent_code>`
-- :ref:`plus <Binary_operations:List_of_operations_and_their_equivalent_code>`
-- :ref:`mtimes <Binary_operations:List_of_operations_and_their_equivalent_code>`
-- :ref:`mrdivide <Binary_operations:List_of_operations_and_their_equivalent_code>`
-- :ref:`mldivide <Binary_operations:List_of_operations_and_their_equivalent_code>`
-- :ref:`mpower <Binary_operations:List_of_operations_and_their_equivalent_code>`
+- :ref:`minus <Binary_operations:List of operations and their equivalent code>`
+- :ref:`plus <Binary_operations:List of operations and their equivalent code>`
+- :ref:`mtimes <Binary_operations:List of operations and their equivalent code>`
+- :ref:`mrdivide <Binary_operations:List of operations and their equivalent code>`
+- :ref:`mldivide <Binary_operations:List of operations and their equivalent code>`
+- :ref:`mpower <Binary_operations:List of operations and their equivalent code>`
 
 
 :ref:`Unary operations <Unary_operations:Unary operations>`
 
-- :ref:`uplus <Unary_operations:uplus>`
-- :ref:`uminus <Unary_operations:uminus>`
-- :ref:`Trigonometric and hyperbolic functions <Unary_operations:Trigonometric_and_hyperbolic_functions>`
-- :ref:`Other mathematical functions <Unary_operations:Other_mathematical_functions>`
+- :ref:`uplus <Unary_operations:unary plus>`
+- :ref:`uminus <Unary_operations:unary minus>`
+- :ref:`Trigonometric and hyperbolic functions <Unary_operations:Trigonometric and hyperbolic functions>`
+- :ref:`Other mathematical functions <Unary_operations:Other mathematical functions>`
 
 
 :ref:`Reshaping etc <Reshaping_etc:Reshaping etc>`
@@ -104,11 +105,13 @@ Listed here are all the functions and commands that can be used in Horace. Each 
 
 :ref:`Read or write to disk <Read_or_write_to_disk:Read or write to disk>`
 
-- :ref:`read <Read_or_write_to_disk:read>`
+- :ref:`read <Read_or_write_to_disk:read_horace, read_sqw, read_dnd>`
 - :ref:`save <Read_or_write_to_disk:save>`
 - :ref:`save xye ascii file <Read_or_write_to_disk:save_xye>`
-- :ref:`header <Read_or_write_to_disk:header>`
-- :ref:`display <Read_or_write_to_disk:display>`
+- :ref:`header <Read_or_write_to_disk:head_horace, head_sqw, head_dnd>`
+
+..
+   - :ref:`display <Read_or_write_to_disk:display>`
 
 
 :ref:`Changing object type <Changing_object_type:Changing object type>`

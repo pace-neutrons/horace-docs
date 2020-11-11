@@ -94,7 +94,7 @@ The optional input arguments are as follows:
 gen_sqw
 =======
 
-This is the main function you will use to turn the data accumulated in multiple SPE files into a single SQW file that will be used by the rest of the Horace functions. An introduction to its use is given in the :ref:`getting started <Getting_started:Creating_an_SQW_file>` section. The syntax is the same as for ``accumulate_sqw``; the only difference is that you give a list of existing input datasets rather than the anticipated list.
+This is the main function you will use to turn the data accumulated in multiple SPE files into a single SQW file that will be used by the rest of the Horace functions. An introduction to its use is given in the :ref:`getting started <Getting_started:Creating an SQW file>` section. The syntax is the same as for ``accumulate_sqw``; the only difference is that you give a list of existing input datasets rather than the anticipated list.
 
 The essential inputs take the following form:
 

@@ -295,8 +295,8 @@ Fitting functions
 Several multifit variants are available for sqw and d1d,d2d,...d4d objects. The only substantive difference is the form of the fit functions they require: either they are functions of the numeric values of the plot coordinates, or they are function of wavevector in reciprocal lattice units and energy.
 
 
-multifit
-********
+multifit function
+*****************
 
 This method is identical to ``multifit_func``.
 

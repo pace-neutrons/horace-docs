@@ -36,7 +36,6 @@ smooth
 Altering plot characteristics and other useful commands
 -------------------------------------------------------
 
-
 Colour of lines and markers
 ===========================
 
@@ -245,7 +244,6 @@ Plot histogram of a 1-dimensional object.
    dh(w_1d);
 
    [figureHandle_, axesHandle_, plotHandle_] = dh(w_1d)
-
 
 pd (plot data)
 ==============

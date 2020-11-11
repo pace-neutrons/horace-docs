@@ -152,7 +152,7 @@ Further through the process you should see something like this:
 
 Notice that this was run on a Linux machine, hence the different style of directory name and appearance of the Matlab window.
 
-Horace will now run for some time generating the SQW file. This can be quite a long time, and depends quite a lot on how much memory your computer has and its processor speed. It is probably best at this stage just to leave your computer to run and go for a coffee! As a rough guide 150 SPE files, each of 105MB, would be combined on a machine with 4GB of RAM (with its :ref:`3GB switch enabled <Download_and_setup:System_Requirements>`) and a speed of 2.5GHz in about 2 hours.
+Horace will now run for some time generating the SQW file. This can be quite a long time, and depends quite a lot on how much memory your computer has and its processor speed. It is probably best at this stage just to leave your computer to run and go for a coffee! As a rough guide 150 SPE files, each of 105MB, would be combined on a machine with 4GB of RAM (with its :ref:`3GB switch enabled <Download_and_setup:System Requirements>`) and a speed of 2.5GHz in about 2 hours.
 
 For this demo the data files have purposely been made much smaller (by using only the low angle detector banks on MAPS, and by only including a limited number of energy bins in the SPE files). Each SPE file is about 18MB, and thus it takes about 8 minutes to process all of the data. If all is well messages will be frequently printed to the Matlab command window to let you know the status of your SQW file generation.
 

@@ -30,20 +30,20 @@ Here we list published papers containing work which required the use of Horace.
 
 - Electron-Phonon Coupling in the Conventional Superconductor YNi2B2C at High Phonon Energies Studied by Time-of-Flight Neutron Spectroscopy\ *. F. Weber, S. Rosenkranz, L. Pintschovius, J.-P. Castellan, R. Osborn, W. Reichardt, R. Heid, K.-P. Bohnen, E. A. Goremychkin, A. Kreyssig, K. Hradil, and D. L. Abernathy. Phys. Rev. Lett.*\ **109**\ , 057001 (2012).
 
-- Spin dynamics of molecular nanomagnets unravelled at atomic scale by four-dimensional inelastic neutron scattering\ *. M. L. Baker, T. Guidi, S. Carretta, J. Ollivier, H. Mutka, H. U. Güdel, G. A. Timco, E. J. L. McInnes, G. Amoretti, R. E. P. Winpenny, P. Santini. Nature Physics*\ **8**\ ,906--911 (2012).
+- Spin dynamics of molecular nanomagnets unravelled at atomic scale by four-dimensional inelastic neutron scattering\ *. M. L. Baker, T. Guidi, S. Carretta, J. Ollivier, H. Mutka, H. U. Godel, G. A. Timco, E. J. L. McInnes, G. Amoretti, R. E. P. Winpenny, P. Santini. Nature Physics*\ **8**\ ,906--911 (2012).
 
 2013
 ====
 
 - Emergence of highly degenerate excited states in frustrated magnet MgCr2O4\ *. K. Tomiyasu, T. Yokobori, Y. Kousaka, R. I. Bewley, T. Guidi, T. Watanabe, J. Akimitsu, K. Yamada; Phys. Rev. Lett.*\ **110**\ , 077205 (2013).
 
-- A Monte Carlo Simulation of Neutron Instrument Resolution Functions\ . Anette Vickery, Linda Udby, Nicoló Violini, Jörg Voigt, Pascale P. Deen, and Kim Lefmann1J. Phys. Soc. Jpn. 82 (2013) Supplement A SA037
+- A Monte Carlo Simulation of Neutron Instrument Resolution Functions\ . Anette Vickery, Linda Udby, Nicolo Violini, Jorg Voigt, Pascale P. Deen, and Kim Lefmann1. J. Phys. Soc. Jpn. 82 (2013) Supplement A SA037
 
 - Spin-Driven Bond Order in a 1/5-Magnetization Plateau Phase in a Triangular Lattice Antiferromagnet CuFeO2\ *. Taro Nakajima, Noriki Terada, Setsuo Mitsuda, and Robert Bewley, Phys. Rev. B*\ **88**\ , 134414 (2013)
 
 - Antiferromagnetic spin ice correlations at (1/2,1/2,1/2) in the ground state of the pyrochlore magnet Tb2Ti2O7\ *. K. Fritsch, K. A. Ross,, Y. Qiu, J. R. D. Copley, T. Guidi, R. I. Bewley, H. A. Dabkowska, and B. D. Gaulin, Phys. Rev. B*\ **87**\ , 094410 (2013).
 
-- Symmetric and asymmetric excitations of a strong-leg quantum spin ladder\ *. D. Schmidiger, S. Mühlbauer, A. Zheludev, P. Bouillot, T. Giamarchi, C. Kollath, G. Ehlers, and A. M. Tsvelik, Phys. Rev. B*\ **88**\ , 094411 (2013)
+- Symmetric and asymmetric excitations of a strong-leg quantum spin ladder\ *. D. Schmidiger, S. Muhlbauer, A. Zheludev, P. Bouillot, T. Giamarchi, C. Kollath, G. Ehlers, and A. M. Tsvelik, Phys. Rev. B*\ **88**\ , 094411 (2013)
 
 2014
 ====
@@ -60,7 +60,7 @@ Here we list published papers containing work which required the use of Horace.
 
 - Competing Exchange Interactions on the Verge of a Metal-Insulator Transition in the Two-Dimensional Spiral Magnet Sr3Fe2O7\ *. J.-H. Kim, Anil Jain, M. Reehuis, G. Khaliullin, D. C. Peets, C. Ulrich, J. T. Park, E. Faulhaber, A. Hoser, H. C. Walker, D. T. Adroja, A. C. Walters, D. S. Inosov, A. Maljuk, and B. Keimer, Phys. Rev. Lett.*\ **113**\ , 147206 (2014)
 
-- Spin-Wave Spectrum of the Quantum Ferromagnet on the Pyrochlore Lattice Lu2V2O7\ *. M. Mena, R. S. Perry, T. G. Perring, M. D. Le, S. Guerrero, M. Storni, D. T. Adroja, Ch. Rüegg, and D. F. McMorrow, Phys. Rev. Lett.*\ **113**\ , 047202 (2014)
+- Spin-Wave Spectrum of the Quantum Ferromagnet on the Pyrochlore Lattice Lu2V2O7\ *. M. Mena, R. S. Perry, T. G. Perring, M. D. Le, S. Guerrero, M. Storni, D. T. Adroja, Ch. Ruegg, and D. F. McMorrow, Phys. Rev. Lett.*\ **113**\ , 047202 (2014)
 
 2015
 ====
@@ -70,11 +70,11 @@ Here we list published papers containing work which required the use of Horace.
 2016
 ====
 
-- Nesting-driven multipolar order in CeB6 from photoemission tomography\ *. A. Koitzsch, N. Heming, M. Knupfer, B. Büchner, P. Y. Portnichenko, A. V. Dukhnenko, N. Y. Shitsevalova, V. B. Filipov, L. L. Lev, V. N. Strocov, J. Ollivier and D. S. Inosov, Nature Communications*\ **7**\ , 10876 (2016)
+- Nesting-driven multipolar order in CeB6 from photoemission tomography\ *. A. Koitzsch, N. Heming, M. Knupfer, B. Buchner, P. Y. Portnichenko, A. V. Dukhnenko, N. Y. Shitsevalova, V. B. Filipov, L. L. Lev, V. N. Strocov, J. Ollivier and D. S. Inosov, Nature Communications*\ **7**\ , 10876 (2016)
 
 - Neutron scattering studies of spin-phonon hybridization and superconducting spin gaps in the high-temperature superconductor La2-x(Sr,Ba)xCuO4\ *. J. J. Wagman, J. P. Carlo, J. Gaudet, G. Van Gastel, D. L. Abernathy, M. B. Stone, G. E. Granroth, A. I. Kolesnikov, A. T. Savici, Y. J. Kim, H. Zhang, D. Ellis, Y. Zhao, L. Clark, A. B. Kallin, E. Mazurek, H. A. Dabkowska, and B. D. Gaulin, Phys. Rev. B*\ **93**\ , 094416 (2016)
 
-- Magnon spectrum of the helimagnetic insulator Cu2OSeO3\ *. P. Y. Portnichenko, J. Romhányi, Y. A. Onykiienko, A. Henschel, M. Schmidt3 A. S. Cameron, M. A. Surmach, J. A. Lim, J. T. Park, A. Schneidewind, D. L. Abernathy, H. Rosner, Jeroen van den Brink, and D. S. Inosov, Nature Communications*\ **7**\ , 10725 (2016)
+- Magnon spectrum of the helimagnetic insulator Cu2OSeO3\ *. P. Y. Portnichenko, J. Romhanyi, Y. A. Onykiienko, A. Henschel, M. Schmidt3 A. S. Cameron, M. A. Surmach, J. A. Lim, J. T. Park, A. Schneidewind, D. L. Abernathy, H. Rosner, Jeroen van den Brink, and D. S. Inosov, Nature Communications*\ **7**\ , 10725 (2016)
 
 - Emergent Interacting Spin Islands in a Depleted Strong-Leg Heisenberg Ladder\ *, D. Schmidiger, K. Yu. Povarov, S. Galeski, N. Reynolds, R. Bewley, T. Guidi, J. Ollivier, and A. Zheludev, Phys. Rev. Lett.*\ **116**\ , 257203 (2016)
 

@@ -403,7 +403,7 @@ In both cases in the above example ``win`` can be an sqw or dnd dataset, that is
 The essential difference comes for the function used to simulate the data. For ``func_eval`` the format is the same as for ``multifit``, specifically the first few input arguments of the function are arrays, all of which have the same number of elements as there are data points. For a 2-dimensional object there would be two such arrays, for a 3-dimensional one there would be three, and so on. Furthermore the arrays are just the axes of the input object, i.e. ``win.data.p{1}, win.data.p{2},...``.
 The arrays input to the ``sqw_eval`` function are different, because there must always be 4 arrays before the input parameters are given. The 4 arrays correspond to the values of the Miller indices h, k, and l; plus energy. The 4 arrays are always supplied, even if the dimensionality of the object to be simulated is lower than 4 -- in this case the values of all of the elements for one or more of the arrays will all be the same. This means that the same function can be used to simulate datasets of different dimensionality with the same model, without having to re-write the function each time. It is also useful if you have a model, such as a spin-wave model, where the calculation is easier if the co-ordinate system is (H,0,0) / (0,K,0) / (0,0,L).
 
-Further information concerning simulations can be found in the :ref:`Simulations <List_of_functions:Fitting>` section of the list of functions.
+Further information concerning simulations can be found in the :ref:`Simulations <LoF_Fitting>` section of the list of functions.
 
 SQW generation and manipulation
 ===============================

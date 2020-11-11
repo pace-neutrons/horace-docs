@@ -8,6 +8,7 @@ It is possible to do combinational operations on sqw objects, e.g. to combine sp
 Commands for cuts and slices
 ============================
 
+.. _Symmetrising_etc_symmetrise_sqw:
 
 Symmetrising
 ************
@@ -81,6 +82,8 @@ This instructs Horace to use 16 MPI workers instead of the default of 8, enabled
    end
 
 
+.. _Symmetrising_etc_combine_sqw:
+
 Combining
 *********
 
@@ -90,6 +93,8 @@ Combining
 
 
 Combine two sqw objects (w1 and w2) of the SAME dimensionality into a single sqw object in order to improve statistics. The output object will have a combined value for the integration range e.g. combining two 2d slices taken at L=1 and L=2 will result in an output for which the stated value of L is L=1.5. Two objects which use different projection axes can be combined. The output object will have the projection axes of w1.
+
+.. _Symmetrising_etc_rebin_sqw:
 
 Rebinning
 *********
@@ -177,7 +182,7 @@ Commands for entire datasets
 ============================
 
 
-**For application of symmetry operations to the entire sqw file when it is being generated, see** :ref:`above <Symmetrising_etc:Symmetrising_whole_data_files>`
+**For application of symmetry operations to the entire sqw file when it is being generated, see** :ref:`above <Symmetrising_etc:Symmetrising whole data files>`
 
 It is possible to make a new .sqw data file that has had a specified symmetrisation performed on it for a certain data range. You specify which Brillouin zone you are interested in, and then tell Horace which Brillouin zones are symmetrically equivalent to this one. Data are then cut from all of these zones and combined with the data from your original choice. The result is output to a new file. For example:
 

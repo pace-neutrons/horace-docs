@@ -8,7 +8,7 @@ When mounting your sample on a spectrometer, it can often be the case that it is
 Step 1 - determine the true positions of Bragg peaks
 ----------------------------------------------------
 
-bragg_positions
+Bragg Positions
 ===============
 
 First you should find several non-parallel strong Bragg peaks in your data. Next run the following routine, which generates radial and transverse cuts around specified Bragg peaks and determines the deviation from the expected values.

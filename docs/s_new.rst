@@ -1,5 +1,5 @@
 #####
-s new
+S new
 #####
 
 On this page we give details of significant changes between various releases of Horace. Minor debugs will not be listed here.
@@ -9,8 +9,8 @@ Version 2.0.2
 
 Released December 2011
 
-Major changes
-*************
+v2.0.2 Major changes
+********************
 
 **Scan planner**
 
@@ -25,8 +25,8 @@ Version 2.0.1
 
 Released November 2009
 
-Major changes
-*************
+v2.0.1 Major changes
+********************
 
 Multifit
 
@@ -49,8 +49,8 @@ Version 1.0
 
 Released May 2009 - the first version of Horace available to the public.
 
-Major changes
-*************
+v1.0 Major changes
+******************
 
 SQW objects
 
