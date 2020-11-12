@@ -97,17 +97,29 @@ Horace Manual
 =============
 
 - Horace Manual chapters
+
   - :ref:`Changing Horace settings <Changing_Horace_settings:Changing Horace settings>`
+
   - :ref:`Planning a Horace scan <Planning_a_Horace_scan:Planning a Horace scan>`
+
   - :ref:`Generating SQW files <Generating_SQW_files:Generating SQW files>`
+
   - :ref:`Taking cuts from data; saving, loading and querying cuts on disk <Manipulating_and_extracting_data_from_SQW_files_and_objects:Manipulating and extracting data from SQW files and objects>`
+
   - :ref:`Correcting for sample misalignment <Correcting_for_sample_misalignment:Correcting for sample misalignment>`
+
   - :ref:`Data diagnostics <Data_diagnostics:Data diagnostics>`
+
   - :ref:`Symmetrising etc <Symmetrising_etc:Symmetrising etc>`
+
   - :ref:`Add, subtract, etc <Binary_operations:Binary operations>`
+
   - :ref:`Plotting <Plotting:Plotting>`
+
   - :ref:`Simulation <Simulation:Simulation>`
+
   - :ref:`Fitting data <Multifit:Multifit>`
+
   - :ref:`Fitting with resolution function convolution <Tobyfit:Tobyfit>`
 
 
