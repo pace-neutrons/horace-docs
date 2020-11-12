@@ -29,7 +29,6 @@ pipeline {
 		bat '''
 		    pip install sphinx &
 		    pip install sphinx_rtd_theme &
-		    dir &
 		    make.bat html &
 		    make.bat html
 		'''
@@ -40,7 +39,7 @@ pipeline {
 		bat '''
 		    rmdir /S /Q ..\\stash &
 		    mkdir ..\\stash &
-		    move docs ..\\stash
+		    move build ..\\stash
 		'''
 	    }
 	}
@@ -51,7 +50,7 @@ pipeline {
 		    git rm -rf .
 		    echo "Bypassing Jekyll on GitHub Pages" > .nojekyll &
 		    git add .nojekyll &
-		    robocopy /E /NFL /NDL /NJS /nc /ns /np ..\\stash\\docs\\html . &
+		    robocopy /E /NFL /NDL /NJS /nc /ns /np ..\\stash\\build\\html . &
 		    git add * &
 		    git commit -m "Document build from CI" &
 		    git push origin gh-pages
