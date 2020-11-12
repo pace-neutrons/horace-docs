@@ -20,8 +20,6 @@ pipeline {
 	stage ('Prepare') {
 	    steps {
 		bat '''
-		    git checkout gh-pages &
-		    git rm -rf . &
 		    git checkout %BRANCH_NAME%
 		'''
 	    }
@@ -40,7 +38,7 @@ pipeline {
 	stage('Store') {
 	    steps {
 		bat '''
-		    rmdir /S /Q ..\\stash
+		    rmdir /S /Q ..\\stash &
 		    mkdir ..\\stash &
 		    move docs ..\\stash
 		'''
@@ -50,6 +48,7 @@ pipeline {
 	    steps {
 		bat '''
 		    git checkout gh-pages &
+		    git rm -rf .
 		    echo "Bypassing Jekyll on GitHub Pages" > .nojekyll &
 		    git add .nojekyll &
 		    robocopy /E /NFL /NDL /NJS /nc /ns /np ..\\stash\\docs\\html . &
