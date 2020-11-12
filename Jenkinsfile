@@ -1,5 +1,7 @@
 #!groovy
 
+// git clone https://pace-builder:%api_token%@github.com/pace-neutrons/horace-docs &
+
 pipeline {
     agent {
 	label 'PACE Windows (Private)'
@@ -11,7 +13,6 @@ pipeline {
 			    variable: 'api_token')]) {
 		    bat '''
 			git config --local user.name "PACE CI Build Agent" &
-			git clone https://pace-builder:%api_token%@github.com/pace-neutrons/horace-docs . &
 		    '''
 		}
 	    }
@@ -30,6 +31,7 @@ pipeline {
 		bat '''
 		    pip install sphinx &
 		    pip install sphinx_rtd_theme &
+		    dir \w &
 		    make.bat html &
 		    make.bat html
 		'''
