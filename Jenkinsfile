@@ -12,7 +12,7 @@ pipeline {
 		    sh '''
 		    git config --local user.name "PACE CI Build Agent"
 		    git config --local user.email "pace.builder.stfc@gmail.com"
-		    git clone https://pace-builder:${api_token}@github.com/pace-neutrons/document-test .
+		    git remote set-url origin https://pace-builder:${api_token}@github.com/pace-neutrons/document-test
 		    '''
 		}
 	    }
