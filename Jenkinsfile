@@ -18,7 +18,7 @@ pipeline {
 	stage ('Prepare') {
 	    steps {
 		sh '''
-		git checkout %BRANCH_NAME%
+		git checkout \${BRANCH_NAME}
 		'''
 	    }
 	}
