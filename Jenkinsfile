@@ -11,6 +11,7 @@ pipeline {
 					variable: 'api_token')]) {
 		    sh '''
 		    git config --local user.name "PACE CI Build Agent"
+		    git config --local user.email "pace.builder.stfc@gmail.com"
 		    '''
 		}
 	    }
