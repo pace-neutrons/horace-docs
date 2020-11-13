@@ -1,60 +1,57 @@
 #!groovy
 
-// git clone https://pace-builder:%api_token%@github.com/pace-neutrons/horace-docs . &
-
 pipeline {
     agent {
-	label 'PACE Windows (Private)'
+	label 'sl7'
     }
     stages {
 	stage('Checkout') {
 	    steps {
 		withCredentials([string(credentialsId: 'GitHub_API_Token',
-			    variable: 'api_token')]) {
-		    bat '''
-			git config --local user.name "PACE CI Build Agent" &
+					variable: 'api_token')]) {
+		    sh '''
+		    git config --local user.name "PACE CI Build Agent"
 		    '''
 		}
 	    }
 	}
 	stage ('Prepare') {
 	    steps {
-		bat '''
-		    git checkout %BRANCH_NAME%
+		sh '''
+		git checkout %BRANCH_NAME%
 		'''
 	    }
 	}
 	stage('Build') {
 	    steps {
-		bat '''
-		    pip install sphinx &
-		    pip install sphinx_rtd_theme &
-		    make.bat html &
-		    make.bat html
+		sh '''
+		pip install sphinx
+		pip install sphinx_rtd_theme
+		make html
+		make html
+		sed -i -r "/\[NULL\]/d" \${HORACE_VERSION}/build/html/*html # Remove dead links
 		'''
 	    }
 	}
 	stage('Store') {
 	    steps {
-		bat '''
-		    rmdir /S /Q ..\\stash &
-		    mkdir ..\\stash &
-		    move build ..\\stash
+		sh '''
+		rm -rf ../stash/*
+		mv build ../stash/
 		'''
 	    }
 	}
 	stage('Deploy') {
 	    steps {
-		bat '''
-		    git checkout gh-pages &
-		    git rm -rf .
-		    echo "Bypassing Jekyll on GitHub Pages" > .nojekyll &
-		    git add .nojekyll &
-		    robocopy /E /NFL /NDL /NJS /nc /ns /np ..\\stash\\build\\html stable &
-		    robocopy /E /NFL /NDL /NJS /nc /ns /np ..\\stash\\build\\html %HORACE_VERSION% &
-		    git add * &
-		    git commit -m "Document build from CI" &
-		    git push origin gh-pages
+		sh '''
+		git checkout gh-pages
+		git rm -rf stable \${HORACE_VERSION}
+		echo "Bypassing Jekyll on GitHub Pages" > .nojekyll
+		git add .nojekyll
+		cp ../stash/build/html \${HORACE_VERSION}
+		git add *
+		git commit -m "Document build from CI"
+		git push origin gh-pages
 		'''
 	    }
 	}
