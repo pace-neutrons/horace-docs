@@ -25,6 +25,7 @@ pipeline {
 	stage('Build') {
 	    steps {
 		sh '''
+		module load python/3.6
 		pip install sphinx
 		pip install sphinx_rtd_theme
 		make html
