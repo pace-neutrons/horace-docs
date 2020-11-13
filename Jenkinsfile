@@ -26,8 +26,8 @@ pipeline {
 	    steps {
 		sh '''
 		module load python/3.6
-		pip install sphinx
-		pip install sphinx_rtd_theme
+		pip install --user sphinx
+		pip install --user sphinx_rtd_theme
 		make html
 		make html
 		sed -i -r "/\\[NULL\\]/d" \${HORACE_VERSION}/build/html/*html # Remove dead links
