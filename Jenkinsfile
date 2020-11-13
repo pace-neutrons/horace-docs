@@ -12,6 +12,7 @@ pipeline {
 		    sh '''
 		    git config --local user.name "PACE CI Build Agent"
 		    git config --local user.email "pace.builder.stfc@gmail.com"
+		    git clone https://pace-builder:${api_token}@github.com/pace-neutrons/document-test .
 		    '''
 		}
 	    }
@@ -26,12 +27,12 @@ pipeline {
 	stage('Build') {
 	    steps {
 		sh '''
-		module load python/3.6
-		pip install --user sphinx
-		pip install --user sphinx_rtd_theme
-		export PATH=${PATH}:~/.local/bin
-		make html
-		make html
+		module load python/3.6 &&
+		pip install --user sphinx &&
+		pip install --user sphinx_rtd_theme &&
+		export PATH=${PATH}:~/.local/bin &&
+		make html &&
+		make html &&
 		sed -i -r "/\\[NULL\\]/d" build/html/*html # Remove dead links
 		'''
 	    }
@@ -39,8 +40,8 @@ pipeline {
 	stage('Store') {
 	    steps {
 		sh '''
-		rm -rf ../stash
-		mkdir ../stash
+		rm -rf ../stash &&
+		mkdir ../stash &&
 		mv build ../stash/
 		'''
 	    }
@@ -50,13 +51,13 @@ pipeline {
 		withCredentials([string(credentialsId: 'GitHub_API_Token',
 					variable: 'api_token')]) {
 		sh '''
-		git checkout gh-pages
-		git rm -rf stable \${HORACE_VERSION}
-		echo "Bypassing Jekyll on GitHub Pages" > .nojekyll
-		git add .nojekyll
-		cp -r ../stash/build/html \${HORACE_VERSION}
-		git add *
-		git commit -m "Document build from CI"
+		git checkout gh-pages &&
+		git rm -rf stable \${HORACE_VERSION} &&
+		echo "Bypassing Jekyll on GitHub Pages" > .nojekyll &&
+		git add .nojekyll &&
+		cp -r ../stash/build/html \${HORACE_VERSION} &&
+		git add * &&
+		git commit -m "Document build from CI" &&
 		git push origin gh-pages
 		'''
 		}
