@@ -46,6 +46,8 @@ pipeline {
 	}
 	stage('Deploy') {
 	    steps {
+		withCredentials([string(credentialsId: 'GitHub_API_Token',
+					variable: 'api_token')]) {
 		sh '''
 		git checkout gh-pages
 		git rm -rf stable \${HORACE_VERSION}
@@ -56,6 +58,7 @@ pipeline {
 		git commit -m "Document build from CI"
 		git push origin gh-pages
 		'''
+		}
 	    }
 	}
     }
