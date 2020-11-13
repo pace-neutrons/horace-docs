@@ -38,7 +38,8 @@ pipeline {
 	stage('Store') {
 	    steps {
 		sh '''
-		rm -rf ../stash/*
+		rm -rf ../stash
+		mkdir ../stash
 		mv build ../stash/
 		'''
 	    }
@@ -50,7 +51,7 @@ pipeline {
 		git rm -rf stable \${HORACE_VERSION}
 		echo "Bypassing Jekyll on GitHub Pages" > .nojekyll
 		git add .nojekyll
-		cp ../stash/build/html \${HORACE_VERSION}
+		cp -r ../stash/build/html \${HORACE_VERSION}
 		git add *
 		git commit -m "Document build from CI"
 		git push origin gh-pages
