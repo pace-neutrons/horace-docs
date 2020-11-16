@@ -10,6 +10,8 @@ pipeline {
 		withCredentials([string(credentialsId: 'GitHub_API_Token',
 					variable: 'api_token')]) {
 		    sh '''
+#		    module load git
+		    git --version
 		    git config --local user.name "PACE CI Build Agent"
 		    git config --local user.email "pace.builder.stfc@gmail.com"
 		    git remote set-url origin https://${api_token}@github.com/pace-neutrons/horace-docs
