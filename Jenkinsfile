@@ -12,7 +12,7 @@ pipeline {
 		    sh '''
 		    git config --local user.name "PACE CI Build Agent"
 		    git config --local user.email "pace.builder.stfc@gmail.com"
-		    git remote set-url --push origin "https://pace-builder:"\${api_token}"@github.com/pace-neutrons/horace-docs"
+		    git remote set-url --push origin "https://pace-builder:"\${api_token## }"@github.com/pace-neutrons/horace-docs"
 		    '''
 		}
 	    }
